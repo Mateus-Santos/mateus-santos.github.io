@@ -1,3 +1,18 @@
+.social_icon {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #070808;
+}
+
 #header {
   position: fixed;
   top: 0;
@@ -8,7 +23,7 @@
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040e42;
+  background: #040e3a;
   overflow-y: auto;
 }
 
@@ -22,7 +37,7 @@
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040e42;
+  background: #040e3a;
   overflow-y: auto;
 }
 
@@ -30,7 +45,7 @@
   margin: 15px auto;
   display: block;
   width: 120px;
-  border: 8px solid #040e42;
+  border: 8px solid #040e3a;
 }
 
 #header .perfil h1 {
@@ -52,7 +67,7 @@
 #header .perfil .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #34fdfd;
+  background: #00fcfc;
   color: #ffffff;
   line-height: 1;
   padding: 8px 0;
@@ -64,7 +79,7 @@
   transition: 0.3s;
 }
 #header .perfil .social-links a:hover {
-  background: #34fdfd;
+  background: #00fcfc;
   color: #ffffff;
   text-decoration: none;
 }
