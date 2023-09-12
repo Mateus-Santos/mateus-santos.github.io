@@ -1,0 +1,91 @@
+// Variáveis
+$cor-menu: #040e42
+$cor-fundo: #272829
+$cor-houver: #34fdfd
+$cor-fonte: #ffffff
+
+// Menu à esquerda.
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+    font-family: "Raleway", sans-serif
+
+body
+    font-family: "Open Sans", sans-serif
+    color: #272829
+
+#header
+    position: fixed
+    top: 0
+    left: 0
+    bottom: 0
+    width: 300px
+    transition: all ease-in-out 0.5s
+    z-index: 9997
+    transition: all 0.5s
+    padding: 0 15px
+    background: $cor-menu
+    overflow-y: auto
+
+#menu
+    position: fixed
+    top: 0
+    left: 0
+    bottom: 0
+    width: 300px
+    transition: all ease-in-out 0.5s
+    z-index: 9997
+    transition: all 0.5s
+    padding: 0 15px
+    background: $cor-menu
+    overflow-y: auto
+
+    //foto de perfil
+#header .perfil img
+    margin: 15px auto
+    display: block
+    width: 120px
+    border: 8px solid $cor-menu
+
+    //Titulo do Perfil.
+#header .perfil h1
+    font-size: 24px
+    margin: 0
+    padding: 0
+    font-weight: 600
+    -moz-text-align-last: center
+    text-align-last: center
+    font-family: "Poppins", sans-serif
+
+#header .perfil h1 a,
+#header .perfil h1 a:hover
+    color: $cor-fonte
+    text-decoration: none
+
+    //Icones das redes sociais.
+#header .perfil .social-links a
+    font-size: 18px
+    display: inline-block
+    background: $cor-houver
+    color: $cor-fonte
+    line-height: 1
+    padding: 8px 0
+    margin-right: 4px
+    border-radius: 50%
+    text-align: center
+    width: 36px
+    height: 36px
+    transition: 0.3s
+
+    &:hover
+        background: $cor-houver
+        color: $cor-fonte
+        text-decoration: none
+
+    //bDispositivos Moveis
+@media (max-width: 768px)
+.breadcrumbs .d-flex
+    display: block !important
