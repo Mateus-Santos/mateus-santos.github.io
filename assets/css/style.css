@@ -6,12 +6,12 @@
   position: relative;
   white-space: nowrap;
   width: 10px;
-  height: 50px;
+  height: 45px;
   color: #b8b8b8;
   list-style-type: none;
 }
 
-.social_icon {
+.menu_icons {
   width: 25px;
   height: 25px;
 }
@@ -56,12 +56,12 @@ body {
 #header .perfil img {
   margin: 15px auto;
   display: block;
-  width: 120px;
-  border: 8px solid linear-gradient(250deg, #010a2b, #000000);
+  width: 100px;
+  border: 5px solid #b8b8b8;
 }
 
 #header .perfil h1 {
-  font-size: 24px;
+  font-size: 27px;
   margin: 0;
   padding: 0;
   font-weight: 600;
