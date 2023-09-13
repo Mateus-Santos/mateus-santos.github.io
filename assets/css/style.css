@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .font-menu {
   font-family: "Open Sans";
 }
@@ -99,4 +100,104 @@ body {
 
 .breadcrumbs .d-flex {
   display: block !important;
+}
+
+/*---------- Sessão Principal ---------- */
+#principal {
+  width: 100%;
+  height: 100vh;
+  background: url("../imgs/foto3.jpg") top center;
+  background-size: cover;
+}
+
+#principal:before {
+  content: "";
+  background: rgba(5, 13, 24, 0.3);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+#principal .principal-container {
+  position: relative;
+  z-index: 2;
+  min-width: 300px;
+}
+
+#principal h1 {
+  margin: 0 0 10px 0;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 56px;
+  color: #fff;
+}
+
+#principal p {
+  color: #fff;
+  margin-bottom: 50px;
+  font-size: 26px;
+  font-family: "Poppins", sans-serif;
+}
+
+#principal p span {
+  color: #fff;
+  padding-bottom: 4px;
+  letter-spacing: 1px;
+  border-bottom: 3px solid #149ddd;
+}
+
+#principal {
+  background-attachment: fixed;
+}
+
+#principal h1 {
+  font-size: 28px;
+  line-height: 36px;
+}
+
+#principal h2 {
+  font-size: 18px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+/*------ # Sessões Gerais ----- */
+section {
+  padding: 60px 0;
+  overflow: hidden;
+}
+
+.section-bg {
+  background: #f5f8fd;
+}
+
+.section-title {
+  padding-bottom: 30px;
+}
+
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  color: #173b6c;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #149ddd;
+  bottom: 0;
+  left: 0;
+}
+
+.section-title p {
+  margin-bottom: 0;
 }/*# sourceMappingURL=style.css.map */
