@@ -1,7 +1,11 @@
+.font-menu {
+  font-family: "Open Sans";
+}
+
 .social_icon {
-  width: 16px;
-  height: 16px;
-  fill: currentColor;
+  width: 30px;
+  height: 30px;
+  color: #1531ac;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -10,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: #070808;
+  color: #272829;
 }
 
 #header {

@@ -3,23 +3,28 @@ $cor-menu: #040e3a
 $cor-fundo: #272829
 $cor-houver: #00fcfc
 $cor-fonte: #ffffff
-$size-icons-social: 16px
-$icon-color: currentColor
+$size-icons-social: 30px
+$color-icons: #1531ac
 
 // Menu à esquerda.
+
+.font-menu
+    font-family: 'Open Sans'
 
 .social_icon
     width: $size-icons-social
     height: $size-icons-social
-    fill: $icon-color
+    color: $color-icons
 
+    //Alterando todas as fontes de titulos.
 h1,h2,h3,h4,h5,h6
     font-family: "Raleway", sans-serif
 
 body
     font-family: "Open Sans", sans-serif
-    color: #070808
+    color: $cor-fundo
 
+    //Criando estrutura do menu esquerdo.
 #header
     position: fixed
     top: 0
