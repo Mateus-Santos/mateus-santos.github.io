@@ -2,10 +2,18 @@
   font-family: "Open Sans";
 }
 
+.nav-menu > ul > li {
+  position: relative;
+  white-space: nowrap;
+  width: 10px;
+  height: 50px;
+  color: #b8b8b8;
+  list-style-type: none;
+}
+
 .social_icon {
-  width: 30px;
-  height: 30px;
-  color: #1531ac;
+  width: 25px;
+  height: 25px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -27,7 +35,7 @@ body {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040e3a;
+  background: linear-gradient(250deg, #010a2b, #000000);
   overflow-y: auto;
 }
 
@@ -41,7 +49,7 @@ body {
   z-index: 9997;
   transition: all 0.5s;
   padding: 0 15px;
-  background: #040e3a;
+  background: linear-gradient(250deg, #010a2b, #000000);
   overflow-y: auto;
 }
 
@@ -49,7 +57,7 @@ body {
   margin: 15px auto;
   display: block;
   width: 120px;
-  border: 8px solid #040e3a;
+  border: 8px solid linear-gradient(250deg, #010a2b, #000000);
 }
 
 #header .perfil h1 {
@@ -64,7 +72,7 @@ body {
 
 #header .perfil h1 a,
 #header .perfil h1 a:hover {
-  color: #ffffff;
+  color: #b8b8b8;
   text-decoration: none;
 }
 
@@ -72,7 +80,7 @@ body {
   font-size: 18px;
   display: inline-block;
   background: #00fcfc;
-  color: #ffffff;
+  color: #b8b8b8;
   line-height: 1;
   padding: 8px 0;
   margin-right: 4px;
@@ -84,7 +92,7 @@ body {
 }
 #header .perfil .social-links a:hover {
   background: #00fcfc;
-  color: #ffffff;
+  color: #b8b8b8;
   text-decoration: none;
 }
 

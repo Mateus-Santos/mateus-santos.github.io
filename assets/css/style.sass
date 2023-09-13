@@ -1,25 +1,31 @@
 // Variáveis
-$cor-menu: #040e3a
+$cor-menu: linear-gradient(250deg, #010a2b, #000000)
 $cor-fundo: #272829
 $cor-houver: #00fcfc
-$cor-fonte: #ffffff
-$size-icons-social: 30px
-$color-icons: #1531ac
+$cor-fonte: #b8b8b8
+$size-icons-social: 25px
 
 // Menu à esquerda.
-
 .font-menu
     font-family: 'Open Sans'
+
+.nav-menu>ul>li 
+  position: relative
+  white-space: nowrap
+  width: 10px
+  height: 50px
+  color: $cor-fonte
+  list-style-type: none
 
 .social_icon
     width: $size-icons-social
     height: $size-icons-social
-    color: $color-icons
 
     //Alterando todas as fontes de titulos.
 h1,h2,h3,h4,h5,h6
     font-family: "Raleway", sans-serif
 
+//Corpo do site.
 body
     font-family: "Open Sans", sans-serif
     color: $cor-fundo
