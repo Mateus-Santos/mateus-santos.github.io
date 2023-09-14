@@ -22,7 +22,6 @@
   list-style-type: none;
 }
 
-.nav-menu a,
 .nav-menu a:focus {
   display: flex;
   align-items: center;
@@ -33,25 +32,18 @@
   font-size: 15px;
 }
 
-.nav-menu a i,
-.nav-menu a:focus i {
+.nav-menu a i .nav-menu a:focus i {
   font-size: 24px;
   padding-right: 8px;
   color: #6f7180;
 }
 
-.nav-menu a:hover,
-.nav-menu .active,
-.nav-menu .active:focus,
-.nav-menu li:hover > a {
+.nav-menu a:hover .nav-menu .active .nav-menu .active:focus .nav-menu li:hover > a {
   text-decoration: none;
   color: #fff;
 }
 
-.nav-menu a:hover i,
-.nav-menu .active i,
-.nav-menu .active:focus i,
-.nav-menu li:hover > a i {
+.nav-menu a:hover i .nav-menu .active i .nav-menu .active:focus i .nav-menu li:hover > a i {
   color: #149ddd;
 }
 
@@ -115,8 +107,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-#header .perfil h1 a,
-#header .perfil h1 a:hover {
+#header .perfil h1 a, #header .perfil h1 a:hover {
   color: #dddddd;
   text-decoration: none;
 }
@@ -138,13 +129,13 @@ body {
 #header .perfil .redes-sociais a:hover {
   background: #00fcfc;
   color: #dddddd;
-  text-decoration: none;
 }
 
-.breadcrumbs .d-flex {
-  display: block !important;
+@media (max-width: 768px) {
+  .breadcrumbs .d-flex {
+    display: block !important;
+  }
 }
-
 /*---------- Sessão Principal ---------- */
 #principal {
   width: 100%;
