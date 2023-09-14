@@ -183,10 +183,11 @@ body {
   border-bottom: 3px solid #149ddd;
 }
 
-#principal {
-  background-attachment: fixed;
+@media (min-width: 1024px) {
+  #principal {
+    background-attachment: fixed;
+  }
 }
-
 @media (max-width: 768px) {
   #principal h1 {
     font-size: 28px;
