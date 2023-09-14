@@ -1,0 +1,148 @@
+// Menu à esquerda variaveis
+
+$cor-menu: linear-gradient(250deg, #000825, #000000);
+$cor-fundo: #272829;
+$cor-houver-menu: #00fcfc;
+$cor-fonte: #dddddd;
+$font-menu: 'Open Sans';
+//Redes Sociais
+$size-icons-social: 25px;
+$sociais-size: 36px;
+
+// Menu à esquerda.
+.font-menu{
+    font-family: $font-menu;
+}
+
+.nav-menu{
+  padding: 30px 0 0 0;
+}
+
+.nav-menu * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu>ul>li{
+    position: relative;
+    white-space: nowrap;
+    width: 10px;
+    height: 45px;
+    color: $cor-fonte;
+    list-style-type: none;
+}
+
+.nav-menu a:focus {
+  display: flex;
+  align-items: center;
+  color: #a8a9b4;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.nav-menu a i .nav-menu a:focus i{
+  font-size: 24px;
+  padding-right: 8px;
+  color: #6f7180;
+}
+.nav-menu a:hover .nav-menu .active .nav-menu .active:focus .nav-menu li:hover>a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-menu a:hover i .nav-menu .active i .nav-menu .active:focus i .nav-menu li:hover>a i{
+  color: #149ddd;
+}
+.menu_icons{
+    width: $size-icons-social;
+    height: $size-icons-social;
+    margin-right: 100%;
+}
+    //Alterando todas as fontes de titulos.
+h1,h2,h3,h4,h5,h6{
+    font-family: "Raleway", sans-serif;
+}
+//Corpo do site.
+body{
+    font-family: "Open Sans", sans-serif;
+    color: $cor-fundo;
+}
+    //Criando estrutura do menu esquerdo.
+#header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    transition: all ease-in-out 0.5s;
+    z-index: 9997;
+    transition: all 0.5s;
+    padding: 0 15px;
+    background: $cor-menu;
+    overflow-y: auto;
+}
+
+#menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    transition: all ease-in-out 0.5s;
+    z-index: 9997;
+    transition: all 0.5s;
+    padding: 0 15px;
+    background: $cor-menu;
+    overflow-y: auto;
+}
+    //foto de perfil
+#header .perfil img{
+    margin: 15px auto;
+    display: block;
+    width: 100px;
+    border: 5px solid $cor-fonte;
+}
+    //Titulo do Perfil.
+#header .perfil h1{
+    font-size: 27px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    font-family: "Poppins", sans-serif;
+}
+#header .perfil h1 a, #header .perfil h1 a:hover{
+    color: $cor-fonte;
+    text-decoration: none;
+}
+    //Icones das redes sociais.
+#header .perfil .redes-sociais a{
+    font-size: 18px;
+    display: inline-block;
+    background: $cor-houver-menu;
+    color: $cor-fonte;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: $sociais-size;
+    height: $sociais-size;
+    transition: 0.3s;
+
+
+    &:hover{
+        background: $cor-houver-menu;
+        color: $cor-fonte;
+    }
+}
+    //Dispositivos Moveis
+@media (max-width: 768px){
+.breadcrumbs .d-flex{
+    display: block !important;
+    }
+}

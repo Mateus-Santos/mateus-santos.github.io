@@ -1,13 +1,17 @@
-// Variáveis
-$cor-menu: linear-gradient(250deg, #010a2b, #000000)
+// Menu à esquerda variaveis
+
+$cor-menu: linear-gradient(250deg, #000825, #000000)
 $cor-fundo: #272829
-$cor-houver: #00fcfc
-$cor-fonte: #b8b8b8
+$cor-houver-menu: #00fcfc
+$cor-fonte: #dddddd
+$font-menu: 'Open Sans'
+//Redes Sociais
 $size-icons-social: 25px
+$sociais-size: 36px
 
 // Menu à esquerda.
 .font-menu
-    font-family: 'Open Sans'
+    font-family: $font-menu
 
 .nav-menu
   padding: 30px 0 0 0
@@ -120,22 +124,22 @@ body
     text-decoration: none
 
     //Icones das redes sociais.
-#header .perfil .social-links a
+#header .perfil .redes-sociais a
     font-size: 18px
     display: inline-block
-    background: $cor-houver
+    background: $cor-houver-menu
     color: $cor-fonte
     line-height: 1
     padding: 8px 0
     margin-right: 4px
     border-radius: 50%
     text-align: center
-    width: 36px
-    height: 36px
+    width: $sociais-size
+    height: $sociais-size
     transition: 0.3s
 
     &:hover
-        background: $cor-houver
+        background: $cor-houver-menu
         color: $cor-fonte
         text-decoration: none
 
