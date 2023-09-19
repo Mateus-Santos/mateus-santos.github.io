@@ -3,7 +3,7 @@
 $cor-menu: linear-gradient(250deg, #000825, #000000);
 $cor-fundo: #272829;
 $cor-houver-menu: #00fcfc;
-$cor-fonte: #dddddd;
+$cor-fonte: #ffffff;
 $font-menu: 'Open Sans';
 
 //Redes Sociais
@@ -55,7 +55,7 @@ $sociais-size: 36px;
 }
 
 .nav-menu a:hover i .nav-menu .active i .nav-menu .active:focus i .nav-menu li:hover>a i{
-  color: #149ddd;
+  color: $cor-houver-menu;
 }
 .menu_icons{
     width: $size-icons-social;
@@ -79,7 +79,7 @@ body{
     bottom: 0;
     width: 300px;
     transition: all ease-in-out 0.5s;
-    z-index: 9997;
+    z-index: 9999;
     transition: all 0.5s;
     padding: 0 15px;
     background: $cor-menu;
