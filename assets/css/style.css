@@ -141,8 +141,7 @@ body {
 #principal {
   position: relative;
   width: 100%;
-  height: 100%;
-  background-image: url("../imgs/foto12.png");
+  background-image: url("../imgs/wallpaper.gif");
   background-size: cover;
 }
 
@@ -159,12 +158,13 @@ body {
 
 #principal .principal-container {
   position: relative;
+  height: 500px;
   z-index: 2;
   min-width: 300px;
 }
 
 #principal h1 {
-  margin: 0 0 10px 0;
+  margin: 50px 0 10px 100px;
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
@@ -173,7 +173,7 @@ body {
 
 #principal p {
   color: #fff;
-  margin-bottom: 50px;
+  margin: 0px 0 0px 102px;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
 }
