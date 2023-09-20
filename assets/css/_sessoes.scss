@@ -1,15 +1,14 @@
 /*------ # Sessões Gerais ----- */
-$fundo: #f5f8fd;
+$fundo: linear-gradient(150deg, #ffffff, #a7a7a7);
 $cor-titulo: #173b6c;
 $cor-after: #149ddd;
 
 section{
     padding: 60px 0;
     overflow: hidden;
+    background: $fundo
 }
-.section-bg{
-    background: $fundo;
-}
+
 .section-title{
     padding-bottom: 30px;
 }

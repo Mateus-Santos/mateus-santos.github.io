@@ -205,10 +205,7 @@ body {
 section {
   padding: 60px 0;
   overflow: hidden;
-}
-
-.section-bg {
-  background: #f5f8fd;
+  background: linear-gradient(150deg, #ffffff, #a7a7a7);
 }
 
 .section-title {
@@ -246,7 +243,6 @@ section {
 .sobre .content h3 {
   font-weight: 700;
   font-size: 26px;
-  color: #173b6c;
 }
 
 .sobre .content ul {
