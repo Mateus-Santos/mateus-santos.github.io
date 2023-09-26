@@ -1,15 +1,23 @@
-const el = document.querySelector("#digitar"); //
-const text = "Professor";
-const interval = 100;
+const profissoes = ["Professor de informática", "Desenvolvedor de Software"]; // Texto a ser digitado.
+const el = document.querySelector("#digitar"); //Escolhendo elemento no HTML para digitar.
 
-function showText(el, text, interval) {
-    const char = text.split("").reverse();
-    const typer = setInterval(() => {
-	if(!char.length){
-        return clearInterval(typer);
-	}
-    const next = char.pop();
-    el.innerHTML += next;
-    }, interval);
+function digitarTexto(texto, indiceCaractere, indicePalavra) { //Função recursiva percorrer caracter a caracter.
+  if (indicePalavra < profissoes.length) { //Verificando se o indice da palavra ainda é menor que o array que possui as mesmas.
+    if (indiceCaractere < texto.length) { // Verificando se o indice do caractere da palavra é maior que a palavra em si.
+      el.innerHTML += texto.charAt(indiceCaractere); // Digitando o caractere da palavra atraves do indice.
+      indiceCaractere++; // Avançando para o próximo caractere da palavra.;
+      setTimeout(() => { // Adicionando uma pausa para a digitação mais lenta e o texto não aparecer de imediato como se nada fosse digitado.
+        digitarTexto(texto, indiceCaractere, indicePalavra); // Chamando novamente a função porém, com um indice do caractere a mais.
+      }, 100); // Atraso de 100 milissegundos (1 segundo = 1000 milissegundos)
+    } else {// Avançando para a próxima palavra.
+      setTimeout(() => {
+        el.innerHTML += " "; // Adicionando espaço entre as palavras.
+        indiceCaractere = 0; // Renovando indice do caractere para contar a próxima palavra.
+        indicePalavra++;// Avançando para a próxima palavra.
+        digitarTexto(profissoes[indicePalavra], indiceCaractere, indicePalavra);
+      }, 500); // Atraso maior entre palavras
+    }
+  }
 }
-showText(el, text, interval);
+
+digitarTexto(profissoes[0], 0, 0); // Iniciar a digitação com a primeira palavra
