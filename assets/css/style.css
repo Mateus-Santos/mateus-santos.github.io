@@ -1,17 +1,69 @@
 @charset "UTF-8";
 @import './_fonts.css';
-.font-menu {
-  font-family: "Open Sans";
+.cmenu.is-active {
+  left: 0%;
+}
+
+.hamburguer {
+  position: absolute;
+  display: block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+.position_hamburguer {
+  position: fixed;
+  left: 25%;
+  top: 10px;
+  z-index: 9999;
+}
+
+.bar {
+  width: 35px;
+  height: 35px;
+}
+
+.hamburguer .bar, .hamburguer:after, .hamburguer:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 6px 0px;
+  transition: 0.4s;
+}
+
+.hamburguer.is-active:before {
+  transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburguer.is-active:after {
+  transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburguer.is-active .bar {
+  opacity: 0;
+}
+
+.nav-menu.is-active {
+  width: 0px;
+  height: 0px;
 }
 
 .nav-menu {
-  padding: 30px 0 0 0;
+  font-family: "Open Sans";
+  transition: 0.4s;
 }
 
-.nav-menu * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.nav-menu li:hover {
+  color: #00fcfc;
 }
 
 .nav-menu > ul > li {
@@ -39,15 +91,6 @@
   color: #ffffff;
 }
 
-.nav-menu a:hover .nav-menu .active .nav-menu .active:focus .nav-menu li:hover > a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-.nav-menu a:hover i .nav-menu .active i .nav-menu .active:focus i .nav-menu li:hover > a i {
-  color: #00fcfc;
-}
-
 .menu_icons {
   width: 25px;
   height: 25px;
@@ -63,14 +106,14 @@ body {
   color: #272829;
 }
 
-#header {
+.cmenu {
   position: fixed;
   top: 0;
-  left: 0;
+  left: -50%;
   bottom: 0;
   width: 300px;
   transition: all ease-in-out 0.5s;
-  z-index: 9999;
+  z-index: 9998;
   transition: all 0.5s;
   padding: 0 15px;
   background: linear-gradient(250deg, #000825, #000000);
@@ -91,14 +134,14 @@ body {
   overflow-y: auto;
 }
 
-#header .perfil img {
+.cmenu .perfil img {
   margin: 15px auto;
   display: block;
   width: 100px;
   border: 5px solid #ffffff;
 }
 
-#header .perfil h1 {
+.cmenu .perfil h1 {
   font-size: 27px;
   margin: 0;
   padding: 0;
@@ -108,12 +151,12 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-#header .perfil h1 a, #header .perfil h1 a:hover {
+.cmenu .perfil h1 a, .cmenu .perfil h1 a:hover {
   color: #ffffff;
   text-decoration: none;
 }
 
-#header .perfil .redes-sociais a {
+.cmenu .perfil .redes-sociais a {
   font-size: 18px;
   display: inline-block;
   background: #00fcfc;
@@ -127,7 +170,7 @@ body {
   height: 36px;
   transition: 0.3s;
 }
-#header .perfil .redes-sociais a:hover {
+.cmenu .perfil .redes-sociais a:hover {
   background: #00fcfc;
   color: #ffffff;
 }
