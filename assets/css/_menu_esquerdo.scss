@@ -2,6 +2,7 @@
 
 $cor-menu: linear-gradient(250deg, #000825, #000000);
 $cor-fundo: #272829;
+$cor-fundo-hover: #7e8083;
 $cor-houver-menu: #00fcfc;
 $cor-fonte: #ffffff;
 $font-menu: 'Open Sans';
@@ -10,19 +11,71 @@ $font-menu: 'Open Sans';
 $size-icons-social: 25px;
 $sociais-size: 36px;
 
+$tamanho: 35px;
+
+.cmenu.is-active{
+    left: 0%;
+}
+
+.hamburguer{
+    position:absolute;
+    display: block;
+    width: $tamanho;
+    height: $tamanho;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.position_hamburguer{
+    position: fixed;
+    left: 25%;
+    top: 10px;
+    z-index: 9999;
+}
+
+.bar{
+    width: $tamanho;
+    height: $tamanho;
+}
+
+.hamburguer .bar, .hamburguer:after, .hamburguer:before{
+    content: '';
+    display: block; 
+    width: 100%;
+    height: 5px;
+    background-color: $cor-fonte;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.hamburguer.is-active:before{
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburguer.is-active:after{
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburguer.is-active .bar{
+    opacity: 0;
+}
+
+.nav-menu.is-active{
+    width: 0px;
+    height: 0px;
+}
+
 // Menu à esquerda.
-.font-menu{
-    font-family: $font-menu;
-}
-
 .nav-menu{
-  padding: 30px 0 0 0;
+    font-family: $font-menu;
+    transition: 0.4s;
 }
 
-.nav-menu * {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+.nav-menu li:hover{
+    color: $cor-houver-menu;
 }
 
 .nav-menu>ul>li{
@@ -49,14 +102,7 @@ $sociais-size: 36px;
   padding-right: 8px;
   color: $cor-fonte;
 }
-.nav-menu a:hover .nav-menu .active .nav-menu .active:focus .nav-menu li:hover>a{
-  text-decoration: none;
-  color: $cor-fonte;
-}
 
-.nav-menu a:hover i .nav-menu .active i .nav-menu .active:focus i .nav-menu li:hover>a i{
-  color: $cor-houver-menu;
-}
 .menu_icons{
     width: $size-icons-social;
     height: $size-icons-social;
@@ -72,14 +118,14 @@ body{
     color: $cor-fundo;
 }
     //Criando estrutura do menu esquerdo.
-#header{
+.cmenu{
     position: fixed;
     top: 0;
-    left: 0;
+    left: -50%;
     bottom: 0;
     width: 300px;
     transition: all ease-in-out 0.5s;
-    z-index: 9999;
+    z-index: 9998;
     transition: all 0.5s;
     padding: 0 15px;
     background: $cor-menu;
@@ -100,14 +146,14 @@ body{
     overflow-y: auto;
 }
     //foto de perfil
-#header .perfil img{
+.cmenu .perfil img{
     margin: 15px auto;
     display: block;
     width: 100px;
     border: 5px solid $cor-fonte;
 }
     //Titulo do Perfil.
-#header .perfil h1{
+.cmenu .perfil h1{
     font-size: 27px;
     margin: 0;
     padding: 0;
@@ -116,12 +162,12 @@ body{
     text-align-last: center;
     font-family: "Poppins", sans-serif;
 }
-#header .perfil h1 a, #header .perfil h1 a:hover{
+.cmenu .perfil h1 a, .cmenu .perfil h1 a:hover{
     color: $cor-fonte;
     text-decoration: none;
 }
     //Icones das redes sociais.
-#header .perfil .redes-sociais a{
+.cmenu .perfil .redes-sociais a{
     font-size: 18px;
     display: inline-block;
     background: $cor-houver-menu;
