@@ -10,9 +10,7 @@
   width: 35px;
   height: 35px;
   cursor: pointer;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   background: none;
   outline: none;
   border: none;
@@ -35,7 +33,7 @@
   display: block;
   width: 100%;
   height: 5px;
-  background-color: #ffffff;
+  background-color: black;
   margin: 6px 0px;
   transition: 0.4s;
 }
@@ -58,12 +56,7 @@
 }
 
 .nav-menu {
-  font-family: "Open Sans";
   transition: 0.4s;
-}
-
-.nav-menu li:hover {
-  color: #00fcfc;
 }
 
 .nav-menu > ul > li {
@@ -175,11 +168,6 @@ body {
   color: #ffffff;
 }
 
-@media (max-width: 768px) {
-  .breadcrumbs .d-flex {
-    display: block !important;
-  }
-}
 /*---------- Sessão Principal ---------- */
 #principal {
   position: relative;
@@ -238,6 +226,7 @@ body {
     font-size: 28px;
     line-height: 36px;
   }
+
   #principal h2 {
     font-size: 18px;
     line-height: 24px;
@@ -317,4 +306,180 @@ section {
 .container, .container-fluid {
   padding-left: 40px;
   padding-right: 40px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/* CSS media query dentro de um stylesheet */
+@media (max-width: 600px) {
+  .cmenu.is-active {
+    left: 0%;
+  }
+
+  .hamburguer {
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+  }
+
+  .position_hamburguer {
+    position: fixed;
+    left: 25%;
+    top: 10px;
+    z-index: 9999;
+  }
+
+  .bar {
+    width: 35px;
+    height: 35px;
+  }
+
+  .hamburguer .bar, .hamburguer:after, .hamburguer:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #ffffff;
+    margin: 6px 0px;
+    transition: 0.4s;
+  }
+
+  .hamburguer.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+  }
+
+  .hamburguer.is-active:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+  }
+
+  .hamburguer.is-active .bar {
+    opacity: 0;
+  }
+
+  .nav-menu.is-active {
+    width: 0px;
+    height: 0px;
+  }
+
+  .nav-menu {
+    font-family: "Open Sans";
+    transition: 0.4s;
+  }
+
+  .nav-menu li:hover {
+    color: #00fcfc;
+  }
+
+  .nav-menu > ul > li {
+    position: relative;
+    white-space: nowrap;
+    width: 10px;
+    height: 45px;
+    color: #ffffff;
+    list-style-type: none;
+  }
+
+  .nav-menu a:focus {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    padding: 12px 15px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+    font-size: 15px;
+  }
+
+  .nav-menu a i .nav-menu a:focus i {
+    font-size: 24px;
+    padding-right: 8px;
+    color: #ffffff;
+  }
+
+  .menu_icons {
+    width: 25px;
+    height: 25px;
+    margin-right: 100%;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+  }
+
+  body {
+    font-family: "Open Sans", sans-serif;
+    color: #272829;
+  }
+
+  .cmenu {
+    position: fixed;
+    top: 0;
+    left: -60%;
+    bottom: 0;
+    width: 300px;
+    transition: all ease-in-out 0.5s;
+    z-index: 9998;
+    transition: all 0.5s;
+    padding: 0 15px;
+    background: linear-gradient(250deg, #000825, #000000);
+    overflow-y: auto;
+  }
+
+  #menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    transition: all ease-in-out 0.5s;
+    z-index: 9997;
+    transition: all 0.5s;
+    padding: 0 15px;
+    background: linear-gradient(250deg, #000825, #000000);
+    overflow-y: auto;
+  }
+
+  .cmenu .perfil img {
+    margin: 15px auto;
+    display: block;
+    width: 100px;
+    border: 5px solid #ffffff;
+  }
+
+  .cmenu .perfil h1 {
+    font-size: 27px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .cmenu .perfil h1 a, .cmenu .perfil h1 a:hover {
+    color: #ffffff;
+    text-decoration: none;
+  }
+
+  .cmenu .perfil .redes-sociais a {
+    font-size: 18px;
+    display: inline-block;
+    background: #00fcfc;
+    color: #ffffff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+  }
+  .cmenu .perfil .redes-sociais a:hover {
+    background: #00fcfc;
+    color: #ffffff;
+  }
+}
