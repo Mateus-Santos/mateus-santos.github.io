@@ -9,62 +9,11 @@ $tamanho: 35px;
     left: 0%;
 }
 
-.hamburguer{
-    position:absolute;
-    display: block;
-    width: $tamanho;
-    height: $tamanho;
-    cursor: pointer;
-    appearance: none;
-    background: none;
-    outline: none;
-    border: none;
-}
-
-.position_hamburguer{
-    position: fixed;
-    left: 25%;
-    top: 10px;
-    z-index: 9999;
-}
-
-.bar{
-    width: $tamanho;
-    height: $tamanho;
-}
-
-.hamburguer .bar, .hamburguer:after, .hamburguer:before{
-    content: '';
-    display: block; 
-    width: 100%;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0px;
-    transition: 0.4s;
-}
-
-.hamburguer.is-active:before{
-    transform: rotate(-45deg) translate(-8px, 6px);
-}
-
-.hamburguer.is-active:after{
-    transform: rotate(45deg) translate(-9px, -8px);
-}
-
-.hamburguer.is-active .bar{
-    opacity: 0;
-}
-
-.nav-menu.is-active{
-    width: 0px;
-    height: 0px;
-}
-
 // Menu à esquerda.
+
 .nav-menu{
     transition: 0.4s;
 }
-
 
 .nav-menu>ul>li{
     position: relative;
@@ -113,7 +62,7 @@ body{
     bottom: 0;
     width: 300px;
     transition: all ease-in-out 0.5s;
-    z-index: 9998;
+    z-index: 9999;
     transition: all 0.5s;
     padding: 0 15px;
     background: $cor-menu;
