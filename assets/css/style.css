@@ -34,8 +34,8 @@
 }
 
 .menu_icons {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
   margin-right: 100%;
 }
 
@@ -98,23 +98,18 @@ body {
   text-decoration: none;
 }
 
-.cmenu .perfil .redes-sociais a {
-  font-size: 18px;
-  display: inline-block;
-  background: #00fcfc;
-  color: #ffffff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
+.cmenu .nav-item:hover {
+  color: #00fcfc;
 }
-.cmenu .perfil .redes-sociais a:hover {
-  background: #00fcfc;
-  color: #ffffff;
+
+.icons_social {
+  padding: 10px 20px 30px 25px;
+}
+.icons_social img {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  margin: 0 8px 0 2px;
 }
 
 /*---------- Sessão Principal ---------- */

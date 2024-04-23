@@ -1,7 +1,7 @@
 @import './_colors.scss';
 
 //Redes Sociais
-$size-icons-social: 25px;
+$size-icons-social: 20px;
 $sociais-size: 36px;
 $tamanho: 35px;
 
@@ -103,24 +103,19 @@ body{
     color: $cor-fonte;
     text-decoration: none;
 }
-    //Icones das redes sociais.
-.cmenu .perfil .redes-sociais a{
-    font-size: 18px;
-    display: inline-block;
-    background: $cor-houver-menu;
-    color: $cor-fonte;
-    line-height: 1;
-    padding: 8px 0;
-    margin-right: 4px;
-    border-radius: 50%;
-    text-align: center;
-    width: $sociais-size;
-    height: $sociais-size;
-    transition: 0.3s;
 
+.cmenu{
+    .nav-item:hover{
+        color: $cor-houver-menu;
+    }
+}
 
-    &:hover{
-        background: $cor-houver-menu;
-        color: $cor-fonte;
+.icons_social{
+    padding: 10px 20px 30px 25px;
+    img{
+        width: 20px;
+        height: 20px;
+        border-radius: 3px;
+        margin: 0 8px 0 2px;
     }
 }
