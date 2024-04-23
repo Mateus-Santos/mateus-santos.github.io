@@ -1,81 +1,18 @@
-// Menu à esquerda variaveis
-
-$cor-menu: linear-gradient(250deg, #000825, #000000);
-$cor-fundo: #272829;
-$cor-fundo-hover: #7e8083;
-$cor-houver-menu: #00fcfc;
-$cor-fonte: #ffffff;
-$font-menu: 'Open Sans';
+@import './_colors.scss';
 
 //Redes Sociais
-$size-icons-social: 25px;
+$size-icons-social: 20px;
 $sociais-size: 36px;
-
 $tamanho: 35px;
 
 .cmenu.is-active{
     left: 0%;
 }
 
-.hamburguer{
-    position:absolute;
-    display: block;
-    width: $tamanho;
-    height: $tamanho;
-    cursor: pointer;
-    appearance: none;
-    background: none;
-    outline: none;
-    border: none;
-}
-
-.position_hamburguer{
-    position: fixed;
-    left: 25%;
-    top: 10px;
-    z-index: 9999;
-}
-
-.bar{
-    width: $tamanho;
-    height: $tamanho;
-}
-
-.hamburguer .bar, .hamburguer:after, .hamburguer:before{
-    content: '';
-    display: block; 
-    width: 100%;
-    height: 5px;
-    background-color: $cor-fonte;
-    margin: 6px 0px;
-    transition: 0.4s;
-}
-
-.hamburguer.is-active:before{
-    transform: rotate(-45deg) translate(-8px, 6px);
-}
-
-.hamburguer.is-active:after{
-    transform: rotate(45deg) translate(-9px, -8px);
-}
-
-.hamburguer.is-active .bar{
-    opacity: 0;
-}
-
-.nav-menu.is-active{
-    width: 0px;
-    height: 0px;
-}
-
 // Menu à esquerda.
-.nav-menu{
-    font-family: $font-menu;
-    transition: 0.4s;
-}
 
-.nav-menu li:hover{
-    color: $cor-houver-menu;
+.nav-menu{
+    transition: 0.4s;
 }
 
 .nav-menu>ul>li{
@@ -125,7 +62,7 @@ body{
     bottom: 0;
     width: 300px;
     transition: all ease-in-out 0.5s;
-    z-index: 9998;
+    z-index: 9999;
     transition: all 0.5s;
     padding: 0 15px;
     background: $cor-menu;
@@ -166,30 +103,19 @@ body{
     color: $cor-fonte;
     text-decoration: none;
 }
-    //Icones das redes sociais.
-.cmenu .perfil .redes-sociais a{
-    font-size: 18px;
-    display: inline-block;
-    background: $cor-houver-menu;
-    color: $cor-fonte;
-    line-height: 1;
-    padding: 8px 0;
-    margin-right: 4px;
-    border-radius: 50%;
-    text-align: center;
-    width: $sociais-size;
-    height: $sociais-size;
-    transition: 0.3s;
 
-
-    &:hover{
-        background: $cor-houver-menu;
-        color: $cor-fonte;
+.cmenu{
+    .nav-item:hover{
+        color: $cor-houver-menu;
     }
 }
-    //Dispositivos Moveis
-@media (max-width: 768px){
-.breadcrumbs .d-flex{
-    display: block !important;
+
+.icons_social{
+    padding: 10px 20px 30px 25px;
+    img{
+        width: 20px;
+        height: 20px;
+        border-radius: 3px;
+        margin: 0 8px 0 2px;
     }
 }

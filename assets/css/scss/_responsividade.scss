@@ -1,0 +1,195 @@
+/* CSS media query dentro de um stylesheet */
+@import './_colors.scss';
+@media (max-width: 600px) {
+    // Menu à esquerda variaveis
+
+$cor-menu: linear-gradient(250deg, #000825, #000000);
+$cor-fundo: #272829;
+$cor-fundo-hover: #7e8083;
+$cor-houver-menu: #00fcfc;
+$cor-fonte: #ffffff;
+$font-menu: 'Open Sans';
+
+//Redes Sociais
+$size-icons-social: 25px;
+$sociais-size: 36px;
+
+$tamanho: 35px;
+
+.cmenu.is-active{
+    left: 0%;
+}
+
+.hamburguer{
+    position:absolute;
+    display: block;
+    width: $tamanho;
+    height: $tamanho;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+.position_hamburguer{
+    position: fixed;
+    left: 25%;
+    top: 10px;
+    z-index: 9999;
+}
+
+.bar{
+    width: $tamanho;
+    height: $tamanho;
+}
+
+.hamburguer .bar, .hamburguer:after, .hamburguer:before{
+    content: '';
+    display: block; 
+    width: 100%;
+    height: 5px;
+    background-color: $cor-fonte;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.hamburguer.is-active:before{
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburguer.is-active:after{
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburguer.is-active .bar{
+    opacity: 0;
+}
+
+.nav-menu.is-active{
+    width: 0px;
+    height: 0px;
+}
+
+// Menu à esquerda.
+.nav-menu{
+    font-family: $font-menu;
+    transition: 0.4s;
+}
+
+.nav-menu li:hover{
+    color: $cor-houver-menu;
+}
+
+.nav-menu>ul>li{
+    position: relative;
+    white-space: nowrap;
+    width: 10px;
+    height: 45px;
+    color: $cor-fonte;
+    list-style-type: none;
+}
+
+.nav-menu a:focus {
+  display: flex;
+  align-items: center;
+  color: $cor-fonte;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.nav-menu a i .nav-menu a:focus i{
+  font-size: 24px;
+  padding-right: 8px;
+  color: $cor-fonte;
+}
+
+.menu_icons{
+    width: $size-icons-social;
+    height: $size-icons-social;
+    margin-right: 100%;
+}
+    //Alterando todas as fontes de titulos.
+h1,h2,h3,h4,h5,h6{
+    font-family: "Raleway", sans-serif;
+}
+//Corpo do site.
+body{
+    font-family: "Open Sans", sans-serif;
+    color: $cor-fundo;
+}
+    //Criando estrutura do menu esquerdo.
+.cmenu{
+    position: fixed;
+    top: 0;
+    left: -60%;
+    bottom: 0;
+    width: 300px;
+    transition: all ease-in-out 0.5s;
+    z-index: 9998;
+    transition: all 0.5s;
+    padding: 0 15px;
+    background: $cor-menu;
+    overflow-y: auto;
+}
+
+#menu{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    transition: all ease-in-out 0.5s;
+    z-index: 9997;
+    transition: all 0.5s;
+    padding: 0 15px;
+    background: $cor-menu;
+    overflow-y: auto;
+}
+    //foto de perfil
+.cmenu .perfil img{
+    margin: 15px auto;
+    display: block;
+    width: 100px;
+    border: 5px solid $cor-fonte;
+}
+    //Titulo do Perfil.
+.cmenu .perfil h1{
+    font-size: 27px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    -moz-text-align-last: center;
+    text-align-last: center;
+    font-family: "Poppins", sans-serif;
+}
+.cmenu .perfil h1 a, .cmenu .perfil h1 a:hover{
+    color: $cor-fonte;
+    text-decoration: none;
+}
+    //Icones das redes sociais.
+.cmenu .perfil .redes-sociais a{
+    font-size: 18px;
+    display: inline-block;
+    background: $cor-houver-menu;
+    color: $cor-fonte;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: $sociais-size;
+    height: $sociais-size;
+    transition: 0.3s;
+
+
+    &:hover{
+        background: $cor-houver-menu;
+        color: $cor-fonte;
+    }
+}
+
+
+}  
