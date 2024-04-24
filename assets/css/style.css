@@ -13,14 +13,14 @@
   white-space: nowrap;
   width: 10px;
   height: 45px;
-  color: #ffffff;
+  color: #e4edf9;
   list-style-type: none;
 }
 
 .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: #ffffff;
+  color: #e4edf9;
   padding: 12px 15px;
   margin-bottom: 8px;
   transition: 0.3s;
@@ -30,7 +30,7 @@
 .nav-menu a i .nav-menu a:focus i {
   font-size: 24px;
   padding-right: 8px;
-  color: #ffffff;
+  color: #e4edf9;
 }
 
 .menu_icons {
@@ -80,7 +80,7 @@ body {
   margin: 15px auto;
   display: block;
   width: 100px;
-  border: 5px solid #ffffff;
+  border: 5px solid #e4edf9;
 }
 
 .cmenu .perfil h1 {
@@ -94,7 +94,7 @@ body {
 }
 
 .cmenu .perfil h1 a, .cmenu .perfil h1 a:hover {
-  color: #ffffff;
+  color: #e4edf9;
   text-decoration: none;
 }
 
@@ -190,7 +190,7 @@ section {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 15px;
   position: relative;
   color: #173b6c;
 }
@@ -449,4 +449,82 @@ section {
 
 .menu-btn.open .btn-line:nth-child(3) {
   transform: translateY(-8px) rotate(-50deg);
+}
+
+.carreira .carreira-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #050d18;
+}
+
+.carreira .carreira-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #e4edf9;
+  border: 2px solid #1f5297;
+}
+
+.carreira .carreira-title {
+  font-size: 26px;
+  font-weight: 700;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #050d18;
+}
+
+.carreira .carreira-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  border-left: 2px solid #1f5297;
+  position: relative;
+}
+
+.carreira .carreira-item h4 {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  color: #050d18;
+  margin-bottom: 10px;
+}
+
+.carreira .carreira-item h5 {
+  font-size: 16px;
+  background: #e4edf9;
+  padding: 5px 15px;
+  display: inline-block;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.carreira .carreira-item ul {
+  padding-left: 20px;
+}
+
+.carreira .carreira-item ul li {
+  padding-bottom: 10px;
+}
+
+.carreira .carreira-item:last-child {
+  padding-bottom: 0;
+}
+
+.carreira .carreira-item::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50px;
+  left: -9px;
+  top: 0;
+  background: #e4edf9;
+  border: 2px solid #1f5297;
 }/*# sourceMappingURL=style.css.map */
