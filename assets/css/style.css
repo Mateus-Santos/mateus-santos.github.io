@@ -13,14 +13,14 @@
   white-space: nowrap;
   width: 10px;
   height: 45px;
-  color: #e4edf9;
+  color: #ffffff;
   list-style-type: none;
 }
 
 .nav-menu a:focus {
   display: flex;
   align-items: center;
-  color: #e4edf9;
+  color: #ffffff;
   padding: 12px 15px;
   margin-bottom: 8px;
   transition: 0.3s;
@@ -30,7 +30,7 @@
 .nav-menu a i .nav-menu a:focus i {
   font-size: 24px;
   padding-right: 8px;
-  color: #e4edf9;
+  color: #ffffff;
 }
 
 .menu_icons {
@@ -80,7 +80,7 @@ body {
   margin: 15px auto;
   display: block;
   width: 100px;
-  border: 5px solid #e4edf9;
+  border: 5px solid #ffffff;
 }
 
 .cmenu .perfil h1 {
@@ -94,7 +94,7 @@ body {
 }
 
 .cmenu .perfil h1 a, .cmenu .perfil h1 a:hover {
-  color: #e4edf9;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -467,7 +467,7 @@ section {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #e4edf9;
+  background: #ffffff;
   border: 2px solid #1f5297;
 }
 
@@ -498,7 +498,7 @@ section {
 
 .carreira .carreira-item h5 {
   font-size: 16px;
-  background: #e4edf9;
+  background: #ffffff;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
@@ -525,6 +525,6 @@ section {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #e4edf9;
+  background: #ffffff;
   border: 2px solid #1f5297;
 }/*# sourceMappingURL=style.css.map */
