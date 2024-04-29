@@ -1,0 +1,64 @@
+/*--------------------------------------------------------------
+# Portfolio Detalhes
+--------------------------------------------------------------*/
+.portfolio-detalhes {
+  padding-top: 40px;
+}
+
+.portfolio-detalhes .portfolio-detalhes-slide img {
+  width: 100%;
+}
+
+.portfolio-detalhes .portfolio-detalhes-slide .pag-deslizante {
+  margin-top: 20px;
+  position: relative;
+}
+
+.portfolio-detalhes .portfolio-detalhes-slide .pag-deslizante .pag-deslizante-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #ffffff;
+  opacity: 1;
+  border: 1px solid #149ddd;
+}
+
+.portfolio-detalhes .portfolio-detalhes-slide .pag-deslizante .pag-deslizante-bullet-active {
+  background-color: #149ddd;
+}
+
+.portfolio-detalhes .portfolio-info {
+  padding: 30px;
+  box-shadow: 0px 0 30px #272829;
+}
+
+.portfolio-detalhes .portfolio-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dff3fc;
+}
+
+.portfolio-detalhes .portfolio-info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 15px;
+}
+
+.portfolio-detalhes .portfolio-info ul li + li {
+  margin-top: 10px;
+}
+
+.portfolio-detalhes .portfolio-descricao {
+  padding-top: 30px;
+}
+
+.portfolio-detalhes .portfolio-descricao h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.portfolio-detalhes .portfolio-descricao p {
+  padding: 0;
+}

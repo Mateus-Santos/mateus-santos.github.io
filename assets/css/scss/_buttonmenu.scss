@@ -1,5 +1,7 @@
+@import './_colors.scss';
 
-//Estrutura do botão
+//Estrutura do botão menu
+
 .menu-btn {
     display: flex;
     flex-direction: column;
@@ -24,7 +26,7 @@
 .btn-line {
     width: 30px;
     height: 5px;
-    background-color: #ffffff;
+    background-color: $cor-fonte;
     margin: 3px;
     transition: all 0.3s ease;
 }

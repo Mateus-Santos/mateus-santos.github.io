@@ -1,12 +1,6 @@
 /*---------- Sessão Principal ---------- */
 @import './_colors.scss';
 
-$principal-color: #fff;
-$filtro-foto: rgba(24, 5, 5, 0.3);
-$bordas-botao: #149ddd;
-$imagem-principal: url("../imgs/wallpaper.gif");
-$font-eu-sou: "Poppins";
-
 #principal{
     position: relative;
     width: 100%;
@@ -44,14 +38,14 @@ $font-eu-sou: "Poppins";
     color: $principal-color;
     margin: 0px 0 0px 102px;
     font-size: 26px;
-    font-family: "Poppins", sans-serif;
+    font-family: $font-sessoes, sans-serif;
 }
 
 #principal p span{
     color: $principal-color;
     padding-bottom: 4px;
     letter-spacing: 1px;
-    border-bottom: 3px solid $bordas-botao;
+    border-bottom: 3px solid $cor-opcoes4;
 }
     //Dispositivos moveis
 @media (min-width: 1024px){
