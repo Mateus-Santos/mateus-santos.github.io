@@ -1,3 +1,5 @@
+@import './_colors.scss';
+
 /*--------------------------------------------------------------
 # Sessão Contato
 --------------------------------------------------------------*/
@@ -5,20 +7,20 @@
     padding-bottom: 130px;
   }
   
-  .contato .info {
+.contato .info {
     padding: 30px;
-    background: #fff;
+    background: $cor-opcoes3;
     width: 100%;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
   }
   
   .contato .info i {
     font-size: 20px;
-    color: #149ddd;
+    color: $cor-opcoes4;
     float: left;
     width: 44px;
     height: 44px;
-    background: #dff3fc;
+    background: $cor-opcoes3;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,14 +33,14 @@
     font-size: 22px;
     font-weight: 600;
     margin-bottom: 5px;
-    color: #050d18;
+    color: $cor-opcoes2;
   }
   
   .contato .info p {
     padding: 0 0 10px 60px;
     margin-bottom: 20px;
     font-size: 14px;
-    color: #173b6c;
+    color: $cor-opcoes;
   }
   
   .contato .info .email p {
@@ -52,8 +54,8 @@
   .contato .info .social-links a {
     font-size: 18px;
     display: inline-block;
-    background: #333;
-    color: #fff;
+    background: $cor-fundo;
+    color: $cor-fonte;
     line-height: 1;
     padding: 8px 0;
     border-radius: 50%;
@@ -65,22 +67,22 @@
   }
   
   .contato .info .social-links a:hover {
-    background: #149ddd;
-    color: #fff;
+    background: $cor-opcoes4;
+    color: $cor-fundo;
   }
   
   .contato .info .email:hover i,
   .contato .info .endereco:hover i,
   .contato .info .telefone:hover i {
-    background: #149ddd;
-    color: #fff;
+    background: $cor-opcoes4;
+    color: $cor-fundo;
   }
   
   .contato .php-email-form {
     width: 100%;
     padding: 30px;
-    background: #fff;
-    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    background: $cor-fundo;
+    box-shadow: 0 0 24px 0 $cor-fundo;
   }
   
   .contato .php-email-form .form-group {
@@ -89,7 +91,7 @@
   
   .contato .php-email-form .validate {
     display: none;
-    color: red;
+    color: $cor-opcoes5;
     margin: 0 0 15px 0;
     font-weight: 400;
     font-size: 13px;
@@ -97,8 +99,8 @@
   
   .contato .php-email-form .error-message {
     display: none;
-    color: #fff;
-    background: #ed3c0d;
+    color: $cor-fundo;
+    background: $cor-opcoes5;
     text-align: left;
     padding: 15px;
     font-weight: 600;
@@ -110,8 +112,8 @@
   
   .contato .php-email-form .sent-message {
     display: none;
-    color: #fff;
-    background: #18d26e;
+    color: $cor-fundo;
+    background: $cor-opcoes6;
     text-align: center;
     padding: 15px;
     font-weight: 600;
@@ -119,7 +121,7 @@
   
   .contato .php-email-form .loading {
     display: none;
-    background: #fff;
+    background: $cor-fundo;
     text-align: center;
     padding: 15px;
   }
@@ -131,8 +133,8 @@
     width: 24px;
     height: 24px;
     margin: 0 10px -6px 0;
-    border: 3px solid #18d26e;
-    border-top-color: #eee;
+    border: 3px solid $cor-opcoes6;
+    border-top-color: $cor-fonte;
     animation: animate-loading 1s linear infinite;
   }
   
@@ -160,10 +162,10 @@
   }
   
   .contato .php-email-form button[type=submit] {
-    background: #149ddd;
+    background: $cor-opcoes4;
     border: 0;
     padding: 10px 24px;
-    color: #fff;
+    color: $cor-fundo;
     transition: 0.4s;
     border-radius: 4px;
   }

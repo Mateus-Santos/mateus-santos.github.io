@@ -1,12 +1,6 @@
 /*---------- Sessão Principal ---------- */
 @import './_colors.scss';
 
-$principal-color: #fff;
-$filtro-foto: rgba(24, 5, 5, 0.3);
-$bordas-botao: #149ddd;
-$imagem-principal: url("../imgs/wallpaper.gif");
-$font-eu-sou: "Poppins";
-
 #principal{
     position: relative;
     width: 100%;
@@ -27,9 +21,9 @@ $font-eu-sou: "Poppins";
 
 #principal .principal-container{
     position: relative;
-    height: 500px;
+    height: 32rem;
     z-index: 2;
-    min-width: 300px;
+    min-width: 1rem;
 }
 
 #principal h1{
@@ -44,29 +38,12 @@ $font-eu-sou: "Poppins";
     color: $principal-color;
     margin: 0px 0 0px 102px;
     font-size: 26px;
-    font-family: "Poppins", sans-serif;
+    font-family: $font-sessoes, sans-serif;
 }
 
 #principal p span{
     color: $principal-color;
     padding-bottom: 4px;
     letter-spacing: 1px;
-    border-bottom: 3px solid $bordas-botao;
-}
-    //Dispositivos moveis
-@media (min-width: 1024px){
-    #principal{
-        background-attachment: fixed;
-    }
-}
-@media (max-width: 768px){
-  #principal h1{
-    font-size: 28px;
-    line-height: 36px;
-    }
-  #principal h2{
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
-    }
+    border-bottom: 3px solid $cor-opcoes4;
 }

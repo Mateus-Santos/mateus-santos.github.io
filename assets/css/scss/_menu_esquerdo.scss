@@ -5,6 +5,7 @@ $size-icons-social: 20px;
 $sociais-size: 36px;
 $tamanho: 35px;
 
+// Expandir menu
 .cmenu.is-active{
     left: 0%;
 }
@@ -47,18 +48,18 @@ $tamanho: 35px;
 }
     //Alterando todas as fontes de titulos.
 h1,h2,h3,h4,h5,h6{
-    font-family: "Raleway", sans-serif;
+    font-family: $font-menu2, sans-serif;
 }
 //Corpo do site.
 body{
-    font-family: "Open Sans", sans-serif;
+    font-family: $font-menu, sans-serif;
     color: $cor-fundo;
 }
     //Criando estrutura do menu esquerdo.
 .cmenu{
     position: fixed;
     top: 0;
-    left: -50%;
+    left: -50rem;
     bottom: 0;
     width: 300px;
     transition: all ease-in-out 0.5s;
@@ -97,7 +98,7 @@ body{
     font-weight: 600;
     -moz-text-align-last: center;
     text-align-last: center;
-    font-family: "Poppins", sans-serif;
+    font-family: $font-sessoes, sans-serif;
 }
 .cmenu .perfil h1 a, .cmenu .perfil h1 a:hover{
     color: $cor-fonte;

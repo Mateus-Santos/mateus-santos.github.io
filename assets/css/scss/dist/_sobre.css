@@ -1,0 +1,40 @@
+.sobre .content h3 {
+  font-weight: 700;
+  font-size: 26px;
+}
+
+.sobre .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sobre .content ul li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.sobre .content ul strong {
+  margin-right: 5px;
+  font-size: 15px;
+}
+
+.sobre .content ul li, i {
+  white-space: nowrap;
+  font-size: 15px;
+}
+
+.sobre .content ul i {
+  margin-right: 2px;
+  color: #149ddd;
+  line-height: 0;
+}
+
+.sobre .content p:last-child {
+  margin-bottom: 0;
+}
+
+.container, .container-fluid {
+  padding-left: 40px;
+  padding-right: 40px;
+}

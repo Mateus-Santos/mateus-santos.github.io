@@ -41,20 +41,27 @@
     font-size: 18px;
     font-weight: 600;
     text-transform: uppercase;
-    font-family: "Poppins", sans-serif;
+    font-family: $font-sessoes, sans-serif;
     color: $cor-opcoes2;
     margin-bottom: 10px;
   }
   
   .carreira .carreira-item h5 {
     font-size: 16px;
-    background: $cor-fonte;
     padding: 5px 15px;
     display: inline-block;
     font-weight: 600;
     margin-bottom: 10px;
+    border-radius: 10px;
   }
-  
+
+  .atual h5{
+    background: $cor-opcoes9;
+  }
+
+  .pass h5{
+    background: $cor-opcoes10;
+  }
   .carreira .carreira-item ul {
     padding-left: 20px;
   }

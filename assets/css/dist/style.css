@@ -133,9 +133,9 @@ body {
 
 #principal .principal-container {
   position: relative;
-  height: 32rem;
+  height: 500px;
   z-index: 2;
-  min-width: 1rem;
+  min-width: 300px;
 }
 
 #principal h1 {
@@ -162,12 +162,12 @@ body {
 
 /*------ # Sessões Gerais ----- */
 section {
-  padding: 3rem 0;
+  padding: 60px 0;
   overflow: hidden;
 }
 
 .section-title {
-  padding-bottom: 2rem;
+  padding-bottom: 30px;
 }
 
 .section-title h2 {
@@ -195,7 +195,7 @@ section {
 }
 
 #main {
-  margin-left: 19rem;
+  margin-left: 300px;
 }
 
 .sobre .content h3 {
@@ -251,7 +251,7 @@ section {
 }
 
 .menu-btn.is-active {
-  left: 19rem;
+  left: 20rem;
   transition-duration: 300ms;
 }
 
@@ -530,58 +530,32 @@ section {
 }
 
 /* CSS media query dentro de um stylesheet */
+@media (min-width: 1024px) {
+  #principal {
+    background-attachment: fixed;
+  }
+}
 @media (max-width: 768px) {
   #principal h1 {
-    font-size: 2rem;
+    font-size: 28px;
     line-height: 36px;
   }
+
   #principal h2 {
     font-size: 18px;
     line-height: 24px;
     margin-bottom: 30px;
   }
-  #principal .principal-container {
-    height: 37rem;
-    min-width: 1rem;
-  }
+
   .menu-btn.is-active {
     transition-duration: 300ms;
-    left: 19rem;
+    left: 18rem;
+    margin: 1rem;
   }
+
   .menu-btn {
-    left: 0.5rem;
-  }
-  #main {
-    margin-left: 1rem;
+    padding: 1rem;
+    margin: 1rem;
+    left: 5rem;
   }
 }
-@media (max-width: 768px) {
-  #principal h1 {
-    font-size: 2rem;
-    line-height: 36px;
-  }
-  #principal h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
-  }
-  #principal .principal-container {
-    height: 37rem;
-    min-width: 1rem;
-  }
-  .menu-btn.is-active {
-    transition-duration: 300ms;
-    left: 15rem;
-  }
-  .menu-btn {
-    left: 0.5rem;
-  }
-  #main {
-    margin-left: 1rem;
-  }
-}
-@media (max-width: 1180px) {
-  #main {
-    margin-left: 1rem;
-  }
-}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,37 @@
+.menu-btn {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  left: 15rem;
+  position: fixed;
+  z-index: 9999;
+  transition-duration: 200ms;
+  mix-blend-mode: difference;
+}
+
+.menu-btn.is-active {
+  left: 19rem;
+  transition-duration: 300ms;
+}
+
+.btn-line {
+  width: 2rem;
+  height: 5px;
+  background-color: #ffffff;
+  margin: 3px;
+  transition: all 0.3s ease;
+}
+
+.menu-btn.open .btn-line:nth-child(1), .menu-btn.open .btn-line:nth-child(3) {
+  width: 30px;
+  transform: translateY(14px) rotate(50deg);
+  left: 15px;
+}
+
+.menu-btn.open .btn-line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-btn.open .btn-line:nth-child(3) {
+  transform: translateY(-8px) rotate(-50deg);
+}

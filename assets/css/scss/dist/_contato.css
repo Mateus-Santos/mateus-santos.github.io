@@ -8,7 +8,7 @@
 
 .contato .info {
   padding: 30px;
-  background: #fff;
+  background: #dff3fc;
   width: 100%;
   box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
 }
@@ -39,7 +39,7 @@
   padding: 0 0 10px 60px;
   margin-bottom: 20px;
   font-size: 14px;
-  color: #173b6c;
+  color: #1f5297;
 }
 
 .contato .info .email p {
@@ -53,8 +53,8 @@
 .contato .info .social-links a {
   font-size: 18px;
   display: inline-block;
-  background: #333;
-  color: #fff;
+  background: #272829;
+  color: #ffffff;
   line-height: 1;
   padding: 8px 0;
   border-radius: 50%;
@@ -67,21 +67,21 @@
 
 .contato .info .social-links a:hover {
   background: #149ddd;
-  color: #fff;
+  color: #272829;
 }
 
 .contato .info .email:hover i,
 .contato .info .endereco:hover i,
 .contato .info .telefone:hover i {
   background: #149ddd;
-  color: #fff;
+  color: #272829;
 }
 
 .contato .php-email-form {
   width: 100%;
   padding: 30px;
-  background: #fff;
-  box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+  background: #272829;
+  box-shadow: 0 0 24px 0 #272829;
 }
 
 .contato .php-email-form .form-group {
@@ -90,7 +90,7 @@
 
 .contato .php-email-form .validate {
   display: none;
-  color: red;
+  color: #ee0808;
   margin: 0 0 15px 0;
   font-weight: 400;
   font-size: 13px;
@@ -98,8 +98,8 @@
 
 .contato .php-email-form .error-message {
   display: none;
-  color: #fff;
-  background: #ed3c0d;
+  color: #272829;
+  background: #ee0808;
   text-align: left;
   padding: 15px;
   font-weight: 600;
@@ -111,7 +111,7 @@
 
 .contato .php-email-form .sent-message {
   display: none;
-  color: #fff;
+  color: #272829;
   background: #18d26e;
   text-align: center;
   padding: 15px;
@@ -120,7 +120,7 @@
 
 .contato .php-email-form .loading {
   display: none;
-  background: #fff;
+  background: #272829;
   text-align: center;
   padding: 15px;
 }
@@ -133,7 +133,7 @@
   height: 24px;
   margin: 0 10px -6px 0;
   border: 3px solid #18d26e;
-  border-top-color: #eee;
+  border-top-color: #ffffff;
   animation: animate-loading 1s linear infinite;
 }
 
@@ -164,7 +164,7 @@
   background: #149ddd;
   border: 0;
   padding: 10px 24px;
-  color: #fff;
+  color: #272829;
   transition: 0.4s;
   border-radius: 4px;
 }
