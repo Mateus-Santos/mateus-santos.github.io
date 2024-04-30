@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import './_fonts.css';
+@import '_fonts.css';
 .cmenu.is-active {
   left: 0%;
 }
