@@ -1,12 +1,12 @@
 @charset "UTF-8";
 /*------ # Sessões Gerais ----- */
 section {
-  padding: 60px 0;
+  padding: 3rem 0;
   overflow: hidden;
 }
 
 .section-title {
-  padding-bottom: 30px;
+  padding-bottom: 2rem;
 }
 
 .section-title h2 {
@@ -15,7 +15,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 15px;
   position: relative;
-  color: #1f5297;
+  color: #032b63;
 }
 
 .section-title h2::after {
@@ -34,5 +34,5 @@ section {
 }
 
 #main {
-  margin-left: 300px;
+  margin-left: 19rem;
 }

@@ -51,7 +51,7 @@ body {
 .cmenu {
   position: fixed;
   top: 0;
-  left: -50%;
+  left: -50rem;
   bottom: 0;
   width: 300px;
   transition: all ease-in-out 0.5s;
@@ -160,23 +160,6 @@ body {
   border-bottom: 3px solid #149ddd;
 }
 
-@media (min-width: 1024px) {
-  #principal {
-    background-attachment: fixed;
-  }
-}
-@media (max-width: 768px) {
-  #principal h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-
-  #principal h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
-  }
-}
 /*------ # Sessões Gerais ----- */
 section {
   padding: 60px 0;
@@ -193,7 +176,7 @@ section {
   margin-bottom: 20px;
   padding-bottom: 15px;
   position: relative;
-  color: #173b6c;
+  color: #032b63;
 }
 
 .section-title h2::after {
@@ -256,28 +239,24 @@ section {
   padding-right: 40px;
 }
 
-/* CSS media query dentro de um stylesheet */
 .menu-btn {
   display: flex;
   flex-direction: column;
   cursor: pointer;
-  padding: 15px;
-  margin: 20px;
+  left: 15rem;
   position: fixed;
-  left: 200px;
-  top: 20px;
   z-index: 9999;
   transition-duration: 200ms;
   mix-blend-mode: difference;
 }
 
 .menu-btn.is-active {
-  left: 22%;
+  left: 20rem;
   transition-duration: 300ms;
 }
 
 .btn-line {
-  width: 30px;
+  width: 2rem;
   height: 5px;
   background-color: #ffffff;
   margin: 3px;
@@ -315,7 +294,7 @@ section {
   left: -9px;
   top: 0;
   background: #ffffff;
-  border: 2px solid #1f5297;
+  border: 2px solid #032b63;
 }
 
 .carreira .carreira-title {
@@ -329,7 +308,7 @@ section {
 .carreira .carreira-item {
   padding: 0 0 20px 20px;
   margin-top: -2px;
-  border-left: 2px solid #1f5297;
+  border-left: 2px solid #032b63;
   position: relative;
 }
 
@@ -345,11 +324,19 @@ section {
 
 .carreira .carreira-item h5 {
   font-size: 16px;
-  background: #ffffff;
   padding: 5px 15px;
   display: inline-block;
   font-weight: 600;
   margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.atual h5 {
+  background: rgba(136, 221, 140, 0.658);
+}
+
+.pass h5 {
+  background: rgba(228, 231, 186, 0.658);
 }
 
 .carreira .carreira-item ul {
@@ -373,7 +360,7 @@ section {
   left: -9px;
   top: 0;
   background: #ffffff;
-  border: 2px solid #1f5297;
+  border: 2px solid #032b63;
 }
 
 /*--------------------------------------------------------------
@@ -496,7 +483,7 @@ section {
 .portfolio-detalhes .portfolio-detalhes-slide .pag-deslizante .pag-deslizante-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: #ffffff;
   opacity: 1;
   border: 1px solid #149ddd;
 }
@@ -507,7 +494,7 @@ section {
 
 .portfolio-detalhes .portfolio-info {
   padding: 30px;
-  box-shadow: 0px 0 30px rgba(5, 13, 24, 0.08);
+  box-shadow: 0px 0 30px #272829;
 }
 
 .portfolio-detalhes .portfolio-info h3 {
@@ -515,7 +502,7 @@ section {
   font-weight: 700;
   margin-bottom: 20px;
   padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #dff3fc;
 }
 
 .portfolio-detalhes .portfolio-info ul {
@@ -540,4 +527,35 @@ section {
 
 .portfolio-detalhes .portfolio-descricao p {
   padding: 0;
+}
+
+/* CSS media query dentro de um stylesheet */
+@media (min-width: 1024px) {
+  #principal {
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 768px) {
+  #principal h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  #principal h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  .menu-btn.is-active {
+    transition-duration: 300ms;
+    left: 18rem;
+    margin: 1rem;
+  }
+
+  .menu-btn {
+    padding: 1rem;
+    margin: 1rem;
+    left: 5rem;
+  }
 }

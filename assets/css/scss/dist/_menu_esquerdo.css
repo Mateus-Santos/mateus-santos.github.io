@@ -49,7 +49,7 @@ body {
 .cmenu {
   position: fixed;
   top: 0;
-  left: -50%;
+  left: -50rem;
   bottom: 0;
   width: 300px;
   transition: all ease-in-out 0.5s;

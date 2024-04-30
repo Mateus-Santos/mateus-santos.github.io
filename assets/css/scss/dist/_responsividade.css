@@ -1,1 +1,66 @@
 /* CSS media query dentro de um stylesheet */
+@media (max-width: 768px) {
+  #principal h1 {
+    font-size: 2rem;
+    line-height: 36px;
+  }
+
+  #principal h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  #principal .principal-container {
+    height: 37rem;
+    min-width: 1rem;
+  }
+
+  .menu-btn.is-active {
+    transition-duration: 300ms;
+    left: 19rem;
+  }
+
+  .menu-btn {
+    left: 0.5rem;
+  }
+
+  #main {
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  #principal h1 {
+    font-size: 2rem;
+    line-height: 36px;
+  }
+
+  #principal h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  #principal .principal-container {
+    height: 37rem;
+    min-width: 1rem;
+  }
+
+  .menu-btn.is-active {
+    transition-duration: 300ms;
+    left: 15rem;
+  }
+
+  .menu-btn {
+    left: 0.5rem;
+  }
+
+  #main {
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 1180px) {
+  #main {
+    margin-left: 1rem;
+  }
+}
