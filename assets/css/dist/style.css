@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import './_fonts.css';
+@import '_fonts.css';
 .cmenu.is-active {
   left: 0%;
 }
@@ -133,9 +133,9 @@ body {
 
 #principal .principal-container {
   position: relative;
-  height: 500px;
+  height: 32rem;
   z-index: 2;
-  min-width: 300px;
+  min-width: 1rem;
 }
 
 #principal h1 {
@@ -162,12 +162,12 @@ body {
 
 /*------ # Sessões Gerais ----- */
 section {
-  padding: 60px 0;
+  padding: 3rem 0;
   overflow: hidden;
 }
 
 .section-title {
-  padding-bottom: 30px;
+  padding-bottom: 2rem;
 }
 
 .section-title h2 {
@@ -195,7 +195,7 @@ section {
 }
 
 #main {
-  margin-left: 300px;
+  margin-left: 19rem;
 }
 
 .sobre .content h3 {
@@ -251,7 +251,7 @@ section {
 }
 
 .menu-btn.is-active {
-  left: 20rem;
+  left: 19rem;
   transition-duration: 300ms;
 }
 
@@ -530,14 +530,9 @@ section {
 }
 
 /* CSS media query dentro de um stylesheet */
-@media (min-width: 1024px) {
-  #principal {
-    background-attachment: fixed;
-  }
-}
 @media (max-width: 768px) {
   #principal h1 {
-    font-size: 28px;
+    font-size: 2rem;
     line-height: 36px;
   }
 
@@ -547,15 +542,56 @@ section {
     margin-bottom: 30px;
   }
 
+  #principal .principal-container {
+    height: 37rem;
+    min-width: 1rem;
+  }
+
   .menu-btn.is-active {
     transition-duration: 300ms;
-    left: 18rem;
-    margin: 1rem;
+    left: 19rem;
   }
 
   .menu-btn {
-    padding: 1rem;
-    margin: 1rem;
-    left: 5rem;
+    left: 0.5rem;
+  }
+
+  #main {
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  #principal h1 {
+    font-size: 2rem;
+    line-height: 36px;
+  }
+
+  #principal h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+
+  #principal .principal-container {
+    height: 37rem;
+    min-width: 1rem;
+  }
+
+  .menu-btn.is-active {
+    transition-duration: 300ms;
+    left: 15rem;
+  }
+
+  .menu-btn {
+    left: 0.5rem;
+  }
+
+  #main {
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 1180px) {
+  #main {
+    margin-left: 1rem;
   }
 }
