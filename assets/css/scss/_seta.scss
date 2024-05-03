@@ -2,68 +2,28 @@
 
 $largura-seta: 2rem;
 $largura-seta-inferior: 4rem;
-$espaço-entre-setas: 5rem;
 
-.div-arrow-position{
-    left: 45%;
-    position: absolute;
+.arrow-container{
+  display: inline-block;
+  position: absolute;
+  margin: 2rem;
+  margin-left: 9rem;
 }
-.arrow-down-1 {
-    position: absolute;
-    width: 0;
-    height: 0;
-    border-left: $largura-seta solid transparent;
-    border-right: $largura-seta solid transparent;
-    border-top: $largura-seta-inferior solid $cor-opcoes2; /* Cor da seta */
-    transform: rotate(360deg); /* Gira a seta para baixo */
-    display: inline-block;
-    animation: color-position-change 2s infinite alternate; /* Nome da animação, duração, repetição e direção */
-    display: inline-block;
-  }
-  
-  @keyframes color-position-change {
-    0% { border-top-color: $cor-opcoes4; transform: translateY(5rem); } /* Cor inicial */
-    100% { border-top-color: $cor-fonte; transform: translateY(7rem); } /* Cor intermediária */
-  }
 
-  @import './_colors.scss';
+.arrow{
+  position: relative;
+  width: 0px;
+  height: 0px;
+  margin: 1rem;
+  border-left: $largura-seta solid transparent;
+  border-right: $largura-seta solid transparent;
+  border-top: $largura-seta-inferior solid $cor-opcoes2; /* Cor da seta */
+  transform: rotate(360deg); /* Gira a seta para baixo */
+  display: block;
+  animation: color-position-change 1s infinite alternate; /* Nome da animação, duração, repetição e direção */
+}
 
-  .arrow-down-2 {
-      position: absolute;
-      width: 0;
-      height: 0;
-      border-left: $largura-seta solid transparent;
-      border-right: $largura-seta solid transparent;
-      border-top: $largura-seta-inferior solid $cor-opcoes2; /* Cor da seta */
-      transform: rotate(360deg); /* Gira a seta para baixo */
-      display: inline-block;
-      margin-top: $espaço-entre-setas;
-      animation: color-position-change 2s infinite alternate; /* Nome da animação, duração, repetição e direção */
-      display: inline-block;
-      margin-top: $espaço-entre-setas;
-    }
-    
-    @keyframes color-position-change {
-      0% { border-top-color: $cor-opcoes4; transform: translateY(5rem); } /* Cor inicial */
-      100% { border-top-color: $cor-fonte; transform: translateY(7rem); } /* Cor intermediária */
-    }
-
-    .arrow-down-3 {
-        position: absolute;
-        width: 0;
-        height: 0;
-        border-left: $largura-seta solid transparent;
-        border-right: $largura-seta solid transparent;
-        border-top: $largura-seta-inferior solid $cor-opcoes2; /* Cor da seta */
-        transform: rotate(360deg); /* Gira a seta para baixo */
-        display: inline-block;
-        margin-top: $espaço-entre-setas;
-        animation: color-position-change 2s infinite alternate; /* Nome da animação, duração, repetição e direção */
-        display: inline-block;
-        margin-top: 10rem;
-      }
-      
-      @keyframes color-position-change {
-        0% { border-top-color: $cor-opcoes4; transform: translateY(5rem); } /* Cor inicial */
-        100% { border-top-color: $cor-fonte; transform: translateY(7rem); } /* Cor intermediária */
-      }
+@keyframes color-position-change {
+  0% { border-top-color: $cor-fonte; transform: translateY(0rem); } /* Cor inicial */
+  100% { border-top-color: $cor-opcoes6; transform: translateY(8rem); } /* Cor intermediária */
+}

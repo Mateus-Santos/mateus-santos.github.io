@@ -121,7 +121,7 @@ body {
 
 #principal:before {
   content: "";
-  background: rgba(24, 5, 5, 0.3);
+  background: rgba(1, 0, 20, 0.281);
   z-index: 1;
   position: absolute;
   bottom: 0;
@@ -135,6 +135,7 @@ body {
   height: 32rem;
   z-index: 2;
   min-width: 1rem;
+  left: 30rem;
 }
 
 #principal h1 {
@@ -147,14 +148,14 @@ body {
 
 #principal p {
   color: #fff;
-  margin: 0px 0 0px 6px;
+  margin: 0 0 0 6px;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
 }
 
 #principal p span {
   color: #fff;
-  padding-bottom: 4px;
+  padding-bottom: 3px;
   letter-spacing: 1px;
   border-bottom: 3px solid #149ddd;
 }
@@ -528,45 +529,51 @@ section {
   padding: 0;
 }
 
+.arrow-container {
+  display: inline-block;
+  position: absolute;
+  margin: 2rem;
+  margin-left: 9rem;
+}
+
+.arrow {
+  position: relative;
+  width: 0px;
+  height: 0px;
+  margin: 1rem;
+  border-left: 2rem solid transparent;
+  border-right: 2rem solid transparent;
+  border-top: 4rem solid #050d18; /* Cor da seta */
+  transform: rotate(360deg); /* Gira a seta para baixo */
+  display: block;
+  animation: color-position-change 1s infinite alternate; /* Nome da animação, duração, repetição e direção */
+}
+
+@keyframes color-position-change {
+  0% {
+    border-top-color: #ffffff;
+    transform: translateY(0rem);
+  } /* Cor inicial */
+  100% {
+    border-top-color: #2cff8e;
+    transform: translateY(8rem);
+  } /* Cor intermediária */
+}
 /* CSS media query dentro de um stylesheet */
 @media (max-width: 768px) {
   #principal h1 {
-    font-size: 2rem;
+    margin-top: 5rem;
+    font-size: 3rem;
     line-height: 36px;
   }
   #principal h2 {
-    font-size: 18px;
+    font-size: 10rem;
     line-height: 24px;
     margin-bottom: 30px;
   }
-  #principal .principal-container {
-    height: 37rem;
-    min-width: 1rem;
-  }
-  .menu-btn.is-active {
-    transition-duration: 300ms;
-    left: 19rem;
-  }
-  .menu-btn {
-    left: 0.5rem;
-  }
-  #main {
-    margin-left: 1rem;
-  }
-}
-@media (max-width: 768px) {
-  #principal h1 {
-    font-size: 2rem;
-    line-height: 36px;
-  }
-  #principal h2 {
-    font-size: 18px;
-    line-height: 24px;
-    margin-bottom: 30px;
-  }
-  #principal .principal-container {
-    height: 37rem;
-    min-width: 1rem;
+  #principal p {
+    font-size: 23px;
+    word-wrap: break-word;
   }
   .menu-btn.is-active {
     transition-duration: 300ms;
@@ -578,87 +585,40 @@ section {
   #main {
     margin-left: 1rem;
   }
+  #principal .principal-container {
+    position: relative;
+    left: 1000rem;
+  }
 }
-@media (max-width: 1180px) {
+@media (max-width: 569px) {
+  #principal h1 {
+    margin-top: 5rem;
+    font-size: 2rem;
+    line-height: 36px;
+  }
+  #principal p {
+    padding-bottom: 0px;
+  }
+  #principal .principal-container {
+    min-width: 1rem;
+    left: 10px;
+  }
+  .arrow-container {
+    margin-left: 8rem;
+  }
+}
+@media (max-width: 1280px) {
+  #principal .principal-container {
+    left: 1rem;
+  }
   #main {
     margin-left: 1rem;
   }
-}
-.div-arrow-position {
-  left: 45%;
-  position: absolute;
-}
-
-.arrow-down-1 {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-left: 2rem solid transparent;
-  border-right: 2rem solid transparent;
-  border-top: 4rem solid #050d18; /* Cor da seta */
-  transform: rotate(360deg); /* Gira a seta para baixo */
-  display: inline-block;
-  animation: color-position-change 2s infinite alternate; /* Nome da animação, duração, repetição e direção */
-  display: inline-block;
-}
-
-@keyframes color-position-change {
-  0% {
-    border-top-color: #149ddd;
-    transform: translateY(5rem);
-  } /* Cor inicial */
-  100% {
-    border-top-color: #ffffff;
-    transform: translateY(7rem);
-  } /* Cor intermediária */
-}
-.arrow-down-2 {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-left: 2rem solid transparent;
-  border-right: 2rem solid transparent;
-  border-top: 4rem solid #050d18; /* Cor da seta */
-  transform: rotate(360deg); /* Gira a seta para baixo */
-  display: inline-block;
-  margin-top: 5rem;
-  animation: color-position-change 2s infinite alternate; /* Nome da animação, duração, repetição e direção */
-  display: inline-block;
-  margin-top: 5rem;
-}
-
-@keyframes color-position-change {
-  0% {
-    border-top-color: #149ddd;
-    transform: translateY(5rem);
-  } /* Cor inicial */
-  100% {
-    border-top-color: #ffffff;
-    transform: translateY(7rem);
-  } /* Cor intermediária */
-}
-.arrow-down-3 {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-left: 2rem solid transparent;
-  border-right: 2rem solid transparent;
-  border-top: 4rem solid #050d18; /* Cor da seta */
-  transform: rotate(360deg); /* Gira a seta para baixo */
-  display: inline-block;
-  margin-top: 5rem;
-  animation: color-position-change 2s infinite alternate; /* Nome da animação, duração, repetição e direção */
-  display: inline-block;
-  margin-top: 10rem;
-}
-
-@keyframes color-position-change {
-  0% {
-    border-top-color: #149ddd;
-    transform: translateY(5rem);
-  } /* Cor inicial */
-  100% {
-    border-top-color: #ffffff;
-    transform: translateY(7rem);
-  } /* Cor intermediária */
+  .menu-btn.is-active {
+    transition-duration: 300ms;
+    left: 19rem;
+  }
+  .menu-btn {
+    left: 0.5rem;
+  }
 }/*# sourceMappingURL=style.css.map */
