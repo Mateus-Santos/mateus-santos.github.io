@@ -138,7 +138,7 @@ body {
 }
 
 #principal h1 {
-  margin: 50px 0 10px 100px;
+  margin: 45px 0 10px 2px;
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
@@ -147,7 +147,7 @@ body {
 
 #principal p {
   color: #fff;
-  margin: 0px 0 0px 102px;
+  margin: 0px 0 0px 6px;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
 }
@@ -583,4 +583,82 @@ section {
   #main {
     margin-left: 1rem;
   }
+}
+.div-arrow-position {
+  left: 45%;
+  position: absolute;
+}
+
+.arrow-down-1 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 2rem solid transparent;
+  border-right: 2rem solid transparent;
+  border-top: 4rem solid #050d18; /* Cor da seta */
+  transform: rotate(360deg); /* Gira a seta para baixo */
+  display: inline-block;
+  animation: color-position-change 2s infinite alternate; /* Nome da animação, duração, repetição e direção */
+  display: inline-block;
+}
+
+@keyframes color-position-change {
+  0% {
+    border-top-color: #149ddd;
+    transform: translateY(5rem);
+  } /* Cor inicial */
+  100% {
+    border-top-color: #ffffff;
+    transform: translateY(7rem);
+  } /* Cor intermediária */
+}
+.arrow-down-2 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 2rem solid transparent;
+  border-right: 2rem solid transparent;
+  border-top: 4rem solid #050d18; /* Cor da seta */
+  transform: rotate(360deg); /* Gira a seta para baixo */
+  display: inline-block;
+  margin-top: 5rem;
+  animation: color-position-change 2s infinite alternate; /* Nome da animação, duração, repetição e direção */
+  display: inline-block;
+  margin-top: 5rem;
+}
+
+@keyframes color-position-change {
+  0% {
+    border-top-color: #149ddd;
+    transform: translateY(5rem);
+  } /* Cor inicial */
+  100% {
+    border-top-color: #ffffff;
+    transform: translateY(7rem);
+  } /* Cor intermediária */
+}
+.arrow-down-3 {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 2rem solid transparent;
+  border-right: 2rem solid transparent;
+  border-top: 4rem solid #050d18; /* Cor da seta */
+  transform: rotate(360deg); /* Gira a seta para baixo */
+  display: inline-block;
+  margin-top: 5rem;
+  animation: color-position-change 2s infinite alternate; /* Nome da animação, duração, repetição e direção */
+  display: inline-block;
+  margin-top: 10rem;
+}
+
+@keyframes color-position-change {
+  0% {
+    border-top-color: #149ddd;
+    transform: translateY(5rem);
+  } /* Cor inicial */
+  100% {
+    border-top-color: #ffffff;
+    transform: translateY(7rem);
+  } /* Cor intermediária */
 }/*# sourceMappingURL=style.css.map */
