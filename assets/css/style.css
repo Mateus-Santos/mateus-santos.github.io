@@ -559,6 +559,12 @@ section {
     transform: translateY(8rem);
   } /* Cor intermediária */
 }
+.icons {
+  width: 1000px !important;
+  height: 1000px !important;
+  margin-left: 5px;
+}
+
 /* CSS media query dentro de um stylesheet */
 @media (max-width: 768px) {
   #principal h1 {
