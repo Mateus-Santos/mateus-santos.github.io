@@ -1,0 +1,29 @@
+@import './_colors.scss';
+
+$largura-seta: 2rem;
+$largura-seta-inferior: 4rem;
+
+.arrow-container{
+  display: inline-block;
+  position: absolute;
+  margin: 2rem;
+  margin-left: 9rem;
+}
+
+.arrow{
+  position: relative;
+  width: 0px;
+  height: 0px;
+  margin: 1rem;
+  border-left: $largura-seta solid transparent;
+  border-right: $largura-seta solid transparent;
+  border-top: $largura-seta-inferior solid $cor-opcoes2; /* Cor da seta */
+  transform: rotate(360deg); /* Gira a seta para baixo */
+  display: block;
+  animation: color-position-change 1s infinite alternate; /* Nome da animação, duração, repetição e direção */
+}
+
+@keyframes color-position-change {
+  0% { border-top-color: $cor-fonte; transform: translateY(0rem); } /* Cor inicial */
+  100% { border-top-color: $cor-opcoes6; transform: translateY(8rem); } /* Cor intermediária */
+}
