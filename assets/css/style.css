@@ -560,9 +560,13 @@ section {
   } /* Cor intermediária */
 }
 .icons {
-  width: 1000px !important;
-  height: 1000px !important;
-  margin-left: 5px;
+  margin-left: 8px;
+  margin: 0 10px 0 10px;
+}
+
+.bi {
+  font-size: 20px;
+  margin: 0 5px 0 5px;
 }
 
 /* CSS media query dentro de um stylesheet */
