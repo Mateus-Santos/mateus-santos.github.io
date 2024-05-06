@@ -102,13 +102,17 @@ body {
 }
 
 .icons_social {
-  padding: 10px 20px 30px 25px;
+  padding: 10px 20px 30px 50px;
 }
-.icons_social img {
-  width: 20px;
-  height: 20px;
-  border-radius: 3px;
-  margin: 0 8px 0 2px;
+.icons_social a {
+  color: #dff3fc;
+  border-radius: 100px;
+  padding: 5px 5px 5px 5px;
+  background-color: #272829;
+}
+.icons_social :hover {
+  color: #149ddd;
+  background-color: #dff3fc;
 }
 
 /*---------- Sessão Principal ---------- */

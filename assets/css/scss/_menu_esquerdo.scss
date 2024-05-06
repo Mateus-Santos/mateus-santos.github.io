@@ -112,11 +112,14 @@ body{
 }
 
 .icons_social{
-    padding: 10px 20px 30px 25px;
-    img{
-        width: 20px;
-        height: 20px;
-        border-radius: 3px;
-        margin: 0 8px 0 2px;
+    padding: 10px 20px 30px 50px;
+    a{
+        color: $cor-opcoes3;
+        border-radius: 100px;
+        padding: 5px 5px 5px 5px;
+        background-color: $cor-fundo;
+    }:hover{
+        color: $cor-opcoes4;
+        background-color: $cor-opcoes3;
     }
 }
