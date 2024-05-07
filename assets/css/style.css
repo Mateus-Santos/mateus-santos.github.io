@@ -1,41 +1,8 @@
 @charset "UTF-8";
-.cmenu.is-active {
-  left: 0%;
-}
-
-.nav-menu {
-  transition: 0.4s;
-}
-
-.nav-menu > ul > li {
-  position: relative;
-  white-space: nowrap;
-  width: 10px;
-  height: 45px;
-  color: #ffffff;
-  list-style-type: none;
-}
-
-.nav-menu a:focus {
-  display: flex;
-  align-items: center;
-  color: #ffffff;
-  padding: 12px 15px;
-  margin-bottom: 8px;
-  transition: 0.3s;
-  font-size: 15px;
-}
-
-.nav-menu a i .nav-menu a:focus i {
-  font-size: 24px;
-  padding-right: 8px;
-  color: #ffffff;
-}
-
-.menu_icons {
-  width: 20px;
-  height: 20px;
-  margin-right: 100%;
+/*---------- Sessão Principal ---------- */
+* {
+  margin: 0;
+  padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -44,78 +11,26 @@ h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: #272829;
 }
 
-.cmenu {
-  position: fixed;
-  top: 0;
-  left: -50rem;
-  bottom: 0;
-  width: 300px;
-  transition: all ease-in-out 0.5s;
-  z-index: 9999;
-  transition: all 0.5s;
-  padding: 0 15px;
-  background: linear-gradient(250deg, #000825, #000000);
-  overflow-y: auto;
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-#menu {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 300px;
-  transition: all ease-in-out 0.5s;
-  z-index: 9997;
-  transition: all 0.5s;
-  padding: 0 15px;
-  background: linear-gradient(250deg, #000825, #000000);
-  overflow-y: auto;
+body::-webkit-scrollbar {
+  width: 7px;
 }
 
-.cmenu .perfil img {
-  margin: 15px auto;
-  display: block;
-  width: 100px;
-  border: 5px solid #ffffff;
+body::-webkit-scrollbar-track {
+  background-color: transparent;
 }
 
-.cmenu .perfil h1 {
-  font-size: 27px;
-  margin: 0;
-  padding: 0;
-  font-weight: 600;
-  -moz-text-align-last: center;
-  text-align-last: center;
-  font-family: "Poppins", sans-serif;
+body::-webkit-scrollbar-thumb {
+  background-color: #149ddd;
+  border-radius: 50px;
 }
 
-.cmenu .perfil h1 a, .cmenu .perfil h1 a:hover {
-  color: #ffffff;
-  text-decoration: none;
-}
-
-.cmenu .nav-item:hover {
-  color: #00fcfc;
-}
-
-.icons_social {
-  padding: 10px 20px 30px 50px;
-}
-.icons_social a {
-  color: #dff3fc;
-  border-radius: 100px;
-  padding: 5px 5px 5px 5px;
-  background-color: #272829;
-}
-.icons_social :hover {
-  color: #149ddd;
-  background-color: #dff3fc;
-}
-
-/*---------- Sessão Principal ---------- */
 #principal {
   position: relative;
   width: 100%;
@@ -125,7 +40,7 @@ body {
 
 #principal:before {
   content: "";
-  background: rgba(1, 0, 20, 0.281);
+  background: rgba(17, 17, 27, 0.336);
   z-index: 1;
   position: absolute;
   bottom: 0;
@@ -200,6 +115,118 @@ section {
 
 #main {
   margin-left: 19rem;
+}
+
+.cmenu.is-active {
+  left: 0%;
+}
+
+.nav-menu {
+  transition: 0.4s;
+}
+
+.nav-menu > ul > li {
+  position: relative;
+  white-space: nowrap;
+  width: 10px;
+  height: 45px;
+  color: #ffffff;
+  list-style-type: none;
+}
+
+.nav-menu a:focus {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  padding: 12px 15px;
+  margin-bottom: 8px;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+.nav-menu a i .nav-menu a:focus i {
+  font-size: 24px;
+  padding-right: 8px;
+  color: #ffffff;
+}
+
+.menu_icons {
+  width: 20px;
+  height: 20px;
+  margin-right: 100%;
+}
+
+.cmenu {
+  position: fixed;
+  top: 0;
+  left: -50rem;
+  bottom: 0;
+  width: 300px;
+  transition: all ease-in-out 0.5s;
+  z-index: 9999;
+  transition: all 0.5s;
+  padding: 0 15px;
+  background: linear-gradient(250deg, #000825, #000000);
+  overflow-y: auto;
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 300px;
+  transition: all ease-in-out 0.5s;
+  z-index: 9997;
+  transition: all 0.5s;
+  padding: 0 15px;
+  background: linear-gradient(250deg, #000825, #000000);
+  overflow-y: auto;
+}
+
+.cmenu .perfil img {
+  margin: 15px auto;
+  display: block;
+  width: 100px;
+  border: 5px solid #ffffff;
+}
+
+.cmenu .perfil h1 {
+  font-size: 27px;
+  margin: 0;
+  padding: 0;
+  font-weight: 600;
+  -moz-text-align-last: center;
+  text-align-last: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.cmenu .perfil h1 a, .cmenu .perfil h1 a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.cmenu .nav-item:hover {
+  color: #00fcfc;
+}
+
+.icons_social {
+  padding: 20px 20px 20px 50px;
+}
+.icons_social i {
+  font-size: 18px;
+}
+.icons_social a {
+  color: #dff3fc;
+  border-radius: 50%;
+  padding: 6px 3px 6px 3px;
+  width: 200px;
+  height: 200px;
+  background-color: rgba(0, 25, 61, 0.5882352941);
+}
+.icons_social :hover {
+  color: #050d18;
+  background-color: #00fcfc;
 }
 
 .sobre .content h3 {

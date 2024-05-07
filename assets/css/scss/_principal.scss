@@ -1,6 +1,39 @@
 /*---------- Sessão Principal ---------- */
 @import './_colors.scss';
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+//Alterando todas as fontes de titulos.
+h1,h2,h3,h4,h5,h6{
+    font-family: $font-menu2, sans-serif;
+}
+//Corpo do site.
+body{
+    font-family: $font-menu, sans-serif;
+}
+
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    width: 7px;
+}
+
+body::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: $cor-opcoes4;
+    border-radius: 50px;
+}
+
 #principal{
     position: relative;
     width: 100%;
