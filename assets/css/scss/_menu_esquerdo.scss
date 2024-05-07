@@ -46,15 +46,7 @@ $tamanho: 35px;
     height: $size-icons-social;
     margin-right: 100%;
 }
-    //Alterando todas as fontes de titulos.
-h1,h2,h3,h4,h5,h6{
-    font-family: $font-menu2, sans-serif;
-}
-//Corpo do site.
-body{
-    font-family: $font-menu, sans-serif;
-    color: $cor-fundo;
-}
+
     //Criando estrutura do menu esquerdo.
 .cmenu{
     position: fixed;
@@ -112,11 +104,19 @@ body{
 }
 
 .icons_social{
-    padding: 10px 20px 30px 25px;
-    img{
-        width: 20px;
-        height: 20px;
-        border-radius: 3px;
-        margin: 0 8px 0 2px;
+    padding: 20px 20px 20px 50px;
+    i{
+        font-size: 18px;
+    }
+    a{
+        color: $cor-opcoes3;
+        border-radius: 50%;
+        padding: 6px 3px 6px 3px;
+        width: 200px;
+        height: 200px;
+        background-color: $cor-opcoes11;
+    }:hover{
+        color: $cor-opcoes2;
+        background-color: $cor-houver-menu;
     }
 }
