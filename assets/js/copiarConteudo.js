@@ -1,47 +1,19 @@
-function copiarTelefone() {
-    navigator.clipboard.writeText(5575987028960)
-    .then(function() {
-      console.log('Texto copiado com sucesso: ' + 5575987028960);
-    })
-    .catch(function(err) {
-      console.error('Erro ao copiar texto: ', err);
-    });
-  };
+function transiction(id_element){
+  var cpt = document.getElementById(id_element);
+      // Altere o ícone para o ícone de confirmação
+      cpt.classList.remove("bi-copy");
+      cpt.classList.add("bi-check-circle-fill");
+      setTimeout(function() {
+        cpt.classList.remove("bi-check-circle-fill");
+        cpt.classList.add("bi-copy");
+    }, 1000);
+}
 
-function copiarEmail1() {
-    navigator.clipboard.writeText("mateus11_santos@hotmail.com")
+function copiarConteudo(conteudo, id_element) {
+    navigator.clipboard.writeText(conteudo)
     .then(function() {
-      console.log('Texto copiado com sucesso: ' + "mateus11_santos@hotmail.com");
-    })
-    .catch(function(err) {
-      console.error('Erro ao copiar texto: ', err);
-    });
-  };
-
-function copiarEmail2() {
-    navigator.clipboard.writeText("mateusantosms11@gmail.com")
-    .then(function() {
-      console.log('Texto copiado com sucesso: ' + "mateusantosms11@gmail.com");
-    })
-    .catch(function(err) {
-      console.error('Erro ao copiar texto: ', err);
-    });
-  };
-
-function copiarGithub() {
-    navigator.clipboard.writeText("https://github.com/Mateus-Santos/Mateus-Developer")
-    .then(function() {
-      console.log('Texto copiado com sucesso: ' + "https://github.com/Mateus-Santos/Mateus-Developer");
-    })
-    .catch(function(err) {
-      console.error('Erro ao copiar texto: ', err);
-    });
-  };
-
-function copiarPortfolio() {
-    navigator.clipboard.writeText("https://mateus-santos.github.io/Mateus-Developer/")
-    .then(function() {
-      console.log('Texto copiado com sucesso: ' + "https://mateus-santos.github.io/Mateus-Developer/");
+      console.log('Texto copiado com sucesso: ' + conteudo);  
+      transiction(id_element);
     })
     .catch(function(err) {
       console.error('Erro ao copiar texto: ', err);
