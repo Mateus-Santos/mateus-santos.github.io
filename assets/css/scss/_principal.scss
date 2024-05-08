@@ -19,6 +19,8 @@ body{
 html, body{
     max-width: 100%;
     overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: $cor-opcoes transparent;
 }
 
 body::-webkit-scrollbar{
