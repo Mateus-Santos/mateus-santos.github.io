@@ -19,6 +19,8 @@ body{
 html, body{
     max-width: 100%;
     overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: $cor-opcoes transparent;
 }
 
 body::-webkit-scrollbar{
@@ -30,7 +32,7 @@ body::-webkit-scrollbar-track{
 }
 
 body::-webkit-scrollbar-thumb{
-    background-color: $cor-opcoes4;
+    background: $cor-opcoes;
     border-radius: 50px;
 }
 
