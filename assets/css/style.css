@@ -135,19 +135,20 @@ section a:hover {
 # Sessão Contato
 --------------------------------------------------------------*/
 .contato {
-  padding-bottom: 130px;
+  padding-bottom: 2rem;
 }
 
 .contato .info {
-  padding: 1rem;
   background: #dff3fc;
   width: 100%;
-  box-shadow: 0 0 24px 0 rgba(17, 17, 27, 0.336);
+  box-shadow: 0 0 1rem 0 #032b63;
   border-radius: 2rem;
+  margin-top: 1rem;
+  padding: 1rem 1rem 1rem 1rem;
 }
 
 .contato .info i {
-  font-size: 20px;
+  font-size: 22px;
   color: #149ddd;
   width: 10rem;
   height: 10rem;
@@ -726,4 +727,8 @@ section a:hover {
 .carousel-item img {
   height: 25rem;
   width: 25rem;
+}
+
+.carousel-indicators, .carousel-control-next-icon, .carousel-control-prev-icon {
+  background-color: rgba(17, 17, 27, 0.336);
 }/*# sourceMappingURL=style.css.map */

@@ -4,18 +4,20 @@
 # Sessão Contato
 --------------------------------------------------------------*/
 .contato {
-    padding-bottom: 20rem;
+    padding-bottom: 2rem;
   }
 
 .contato .info {
     background: $cor-opcoes3;
     width: 100%;
-    box-shadow: 0 0 24px 0 $filtro-foto;
+    box-shadow: 0 0 1rem 0 $cor-opcoes;
     border-radius: 2rem;
+    margin-top: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
   }
   
   .contato .info i {
-    font-size: 20px;
+    font-size: 22px;
     color: $cor-opcoes4;
     width: 10rem;
     height: 10rem;
