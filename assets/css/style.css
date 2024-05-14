@@ -86,13 +86,17 @@ section {
   padding: 3rem 0;
   overflow: hidden;
 }
-section [href] {
+section a {
   color: #ffffff;
   text-decoration: none;
   font-weight: Bold;
-  background-color: #149ddd;
+  background-color: #032b63;
   padding: 10px 10px 10px 10px;
   border-radius: 10rem;
+}
+section a:hover {
+  transition: 300ms;
+  background-color: #149ddd;
 }
 
 .section-title {
@@ -153,45 +157,18 @@ section [href] {
   transition: all 0.3s ease-in-out;
 }
 
-/*
 .contato .info h4 {
-  padding: 0 0 0 60px;
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 5px;
-  color: $cor-opcoes2;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #050d18;
 }
 
 .contato .info p {
-  padding: 0 0 10px 60px;
-  margin-bottom: 20px;
-  font-size: 14px;
-  color: $cor-opcoes;
+  margin-bottom: 1rem;
+  font-size: 15px;
 }
 
-.contato .info .email p {
-  padding-top: 5px;
-}
-
-.contato .info .social-links {
-  padding-left: 60px;
-}
-
-.contato .info .social-links a {
-  font-size: 18px;
-  display: inline-block;
-  background: $cor-fundo;
-  color: $cor-fonte;
-  line-height: 1;
-  padding: 8px 0;
-  border-radius: 50%;
-  text-align: center;
-  width: 36px;
-  height: 36px;
-  transition: 0.3s;
-  margin-right: 10px;
-}
-*/
 .cmenu.is-active {
   left: 0%;
 }
@@ -640,6 +617,14 @@ section [href] {
   position: absolute;
   margin: 2rem;
   margin-left: 9rem;
+}
+.arrow-container a {
+  color: initial;
+  text-decoration: none;
+  font-weight: none;
+  background-color: none;
+  padding: 0px 0px 0px 0px;
+  border-radius: 0rem;
 }
 
 .arrow {

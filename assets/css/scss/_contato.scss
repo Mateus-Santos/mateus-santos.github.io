@@ -4,11 +4,10 @@
 # Sessão Contato
 --------------------------------------------------------------*/
 .contato {
-    padding-bottom: 130px;
+    padding-bottom: 20rem;
   }
-  
+
 .contato .info {
-    padding: 1rem;
     background: $cor-opcoes3;
     width: 100%;
     box-shadow: 0 0 24px 0 $filtro-foto;
@@ -25,42 +24,15 @@
     border-radius: 50px;
     transition: all 0.3s ease-in-out;
   }
-  /*
+  
   .contato .info h4 {
-    padding: 0 0 0 60px;
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 1rem;
     color: $cor-opcoes2;
   }
   
   .contato .info p {
-    padding: 0 0 10px 60px;
-    margin-bottom: 20px;
-    font-size: 14px;
-    color: $cor-opcoes;
+    margin-bottom: 1rem;
+    font-size: 15px;
   }
-  
-  .contato .info .email p {
-    padding-top: 5px;
-  }
-  
-  .contato .info .social-links {
-    padding-left: 60px;
-  }
-  
-  .contato .info .social-links a {
-    font-size: 18px;
-    display: inline-block;
-    background: $cor-fundo;
-    color: $cor-fonte;
-    line-height: 1;
-    padding: 8px 0;
-    border-radius: 50%;
-    text-align: center;
-    width: 36px;
-    height: 36px;
-    transition: 0.3s;
-    margin-right: 10px;
-  }
-  */
