@@ -8,26 +8,24 @@
   }
   
 .contato .info {
-    padding: 30px;
+    padding: 1rem;
     background: $cor-opcoes3;
     width: 100%;
-    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 24px 0 $filtro-foto;
+    border-radius: 2rem;
   }
   
   .contato .info i {
     font-size: 20px;
     color: $cor-opcoes4;
-    float: left;
-    width: 44px;
-    height: 44px;
-    background: $cor-opcoes3;
-    display: flex;
+    width: 10rem;
+    height: 10rem;
     justify-content: center;
     align-items: center;
     border-radius: 50px;
     transition: all 0.3s ease-in-out;
   }
-  
+  /*
   .contato .info h4 {
     padding: 0 0 0 60px;
     font-size: 22px;
@@ -65,121 +63,4 @@
     transition: 0.3s;
     margin-right: 10px;
   }
-  
-  .contato .info .social-links a:hover {
-    background: $cor-opcoes4;
-    color: $cor-fundo;
-  }
-  
-  .contato .info .email:hover i,
-  .contato .info .endereco:hover i,
-  .contato .info .telefone:hover i {
-    background: $cor-opcoes4;
-    color: $cor-fundo;
-  }
-  
-  .contato .php-email-form {
-    width: 100%;
-    padding: 30px;
-    background: $cor-fundo;
-    box-shadow: 0 0 24px 0 $cor-fundo;
-  }
-  
-  .contato .php-email-form .form-group {
-    padding-bottom: 8px;
-  }
-  
-  .contato .php-email-form .validate {
-    display: none;
-    color: $cor-opcoes5;
-    margin: 0 0 15px 0;
-    font-weight: 400;
-    font-size: 13px;
-  }
-  
-  .contato .php-email-form .error-message {
-    display: none;
-    color: $cor-fundo;
-    background: $cor-opcoes5;
-    text-align: left;
-    padding: 15px;
-    font-weight: 600;
-  }
-  
-  .contato .php-email-form .error-message br+br {
-    margin-top: 25px;
-  }
-  
-  .contato .php-email-form .sent-message {
-    display: none;
-    color: $cor-fundo;
-    background: $cor-opcoes6;
-    text-align: center;
-    padding: 15px;
-    font-weight: 600;
-  }
-  
-  .contato .php-email-form .loading {
-    display: none;
-    background: $cor-fundo;
-    text-align: center;
-    padding: 15px;
-  }
-  
-  .contato .php-email-form .loading:before {
-    content: "";
-    display: inline-block;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    margin: 0 10px -6px 0;
-    border: 3px solid $cor-opcoes6;
-    border-top-color: $cor-fonte;
-    animation: animate-loading 1s linear infinite;
-  }
-  
-  .contato .php-email-form .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .contato .php-email-form label {
-    padding-bottom: 8px;
-  }
-  
-  .contato .php-email-form input,
-  .contato .php-email-form textarea {
-    border-radius: 0;
-    box-shadow: none;
-    font-size: 14px;
-  }
-  
-  .contato .php-email-form input {
-    height: 44px;
-  }
-  
-  .contato .php-email-form textarea {
-    padding: 10px 15px;
-  }
-  
-  .contato .php-email-form button[type=submit] {
-    background: $cor-opcoes4;
-    border: 0;
-    padding: 10px 24px;
-    color: $cor-fundo;
-    transition: 0.4s;
-    border-radius: 4px;
-  }
-  
-  .contato .php-email-form button[type=submit]:hover {
-    background: #37b3ed;
-  }
-  
-  @keyframes animate-loading {
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
-  }
+  */

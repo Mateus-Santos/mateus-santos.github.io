@@ -14,12 +14,11 @@ function digitarTexto(texto, indiceCaractere, indicePalavra) { //Função recurs
       setTimeout(() => {
         indiceCaractere = 0;                                 // Renovando indice do caractere para contar a próxima palavra.
         indicePalavra++;
+        el.innerHTML = "";
         if(indicePalavra < profissoes.length){
-          el.innerHTML = "";
           digitarTexto(profissoes[indicePalavra], indiceCaractere, indicePalavra);// Avançando para a próxima palavra.
         }
         else{
-          el.innerHTML = "";
           digitarTexto(profissoes[0], 0, 0);
         }
       }, 500);

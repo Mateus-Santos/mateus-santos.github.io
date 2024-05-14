@@ -6,6 +6,14 @@
 section{
     padding: 3rem 0;
     overflow: hidden;
+    [href] {
+        color: $cor-fonte;
+        text-decoration: none;
+        font-weight: Bold;
+        background-color: $cor-opcoes4;
+        padding: 10px 10px 10px 10px;
+        border-radius: 10rem;
+      }
 }
 
 .section-title{
