@@ -11,11 +11,6 @@ function transiction(id_element){
 
 function copiarConteudo(conteudo, id_element) {
     navigator.clipboard.writeText(conteudo)
-    .then(function() {
       console.log('Texto copiado com sucesso: ' + conteudo);  
       transiction(id_element);
-    })
-    .catch(function(err) {
-      console.error('Erro ao copiar texto: ', err);
-    });
   };

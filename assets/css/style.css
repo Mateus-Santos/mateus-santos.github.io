@@ -64,18 +64,18 @@ body::-webkit-scrollbar-thumb {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #fff;
+  color: #ffffff;
 }
 
 #principal p {
-  color: #fff;
+  color: #ffffff;
   margin: 0 0 0 6px;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
 }
 
 #principal p span {
-  color: #fff;
+  color: #ffffff;
   padding-bottom: 3px;
   letter-spacing: 1px;
   border-bottom: 3px solid #149ddd;
@@ -97,6 +97,9 @@ section a {
 section a:hover {
   transition: 300ms;
   background-color: #149ddd;
+}
+section i {
+  color: #149ddd;
 }
 
 .section-title {
@@ -139,9 +142,9 @@ section a:hover {
 }
 
 .contato .info {
-  background: #dff3fc;
+  background: #ffffff;
   width: 100%;
-  box-shadow: 0 0 1rem 0 #032b63;
+  box-shadow: 0 0 2px 0 #032b63;
   border-radius: 2rem;
   margin-top: 1rem;
   padding: 1rem 1rem 1rem 1rem;
@@ -149,7 +152,6 @@ section a:hover {
 
 .contato .info i {
   font-size: 22px;
-  color: #149ddd;
   width: 10rem;
   height: 10rem;
   justify-content: center;
@@ -275,7 +277,7 @@ section a:hover {
   padding: 6px 3px 6px 3px;
   width: 200px;
   height: 200px;
-  background-color: rgba(0, 25, 61, 0.5882352941);
+  background-color: #272829;
 }
 .icons_social :hover {
   color: #050d18;
@@ -310,7 +312,6 @@ section a:hover {
 
 .sobre .content ul i {
   margin-right: 2px;
-  color: #149ddd;
   line-height: 0;
 }
 
@@ -420,7 +421,7 @@ section a:hover {
 }
 
 .pass h5 {
-  background: rgba(228, 231, 186, 0.658);
+  background: rgba(255, 255, 255, 0.5);
 }
 
 .carreira .carreira-item ul {
@@ -522,13 +523,13 @@ section a:hover {
   color: #ffffff;
   font-size: 28px;
   text-align: center;
-  background: rgba(20, 157, 221, 0.95);
+  background: #149ddd;
   transition: 0.3s;
   width: 50%;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
+  background: #149ddd;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a + a {
@@ -647,7 +648,7 @@ section a:hover {
     transform: translateY(0rem);
   } /* Cor inicial */
   100% {
-    border-top-color: #2cff8e;
+    border-top-color: #18ff84;
     transform: translateY(8rem);
   } /* Cor intermediária */
 }
@@ -659,6 +660,15 @@ section a:hover {
 .bi {
   font-size: 20px;
   margin: 0 5px 0 5px;
+}
+
+.bi-copy {
+  color: #149ddd;
+}
+
+.bi-check-circle-fill {
+  color: #18ff84;
+  transition: all 0.3s ease-in-out;
 }
 
 /* CSS media query dentro de um stylesheet */
