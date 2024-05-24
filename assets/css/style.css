@@ -87,6 +87,7 @@ section {
   overflow: hidden;
 }
 section a {
+  transition: 300ms;
   color: #ffffff;
   text-decoration: none;
   font-weight: Bold;
@@ -370,6 +371,28 @@ section i {
   color: #050d18;
 }
 
+.carreira .carreira-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  position: relative;
+}
+
+.projects-color {
+  border-left: 2px solid #18ff84;
+}
+
+.projects-color::before {
+  border: 2px solid #18ff84;
+}
+
+.carrer-color {
+  border-left: 2px solid #032b63;
+}
+
+.carrer-color::before {
+  border: 2px solid #032b63;
+}
+
 .carreira .carreira-item::before {
   content: "";
   position: absolute;
@@ -379,22 +402,6 @@ section i {
   left: -9px;
   top: 0;
   background: #ffffff;
-  border: 2px solid #032b63;
-}
-
-.carreira .carreira-title {
-  font-size: 26px;
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #050d18;
-}
-
-.carreira .carreira-item {
-  padding: 0 0 20px 20px;
-  margin-top: -2px;
-  border-left: 2px solid #032b63;
-  position: relative;
 }
 
 .carreira .carreira-item h4 {
@@ -421,11 +428,23 @@ section i {
 }
 
 .pass h5 {
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(228, 228, 228, 0.637);
 }
 
 .carreira .carreira-item ul {
   padding-left: 20px;
+}
+.carreira .carreira-item ul a {
+  transition: 300ms;
+  background-color: #032b63;
+}
+.carreira .carreira-item ul a:hover {
+  transition: 300ms;
+  background-color: #149ddd;
+}
+.carreira .carreira-item ul i {
+  transition: 300ms;
+  color: #dff3fc;
 }
 
 .carreira .carreira-item ul li {
@@ -434,18 +453,6 @@ section i {
 
 .carreira .carreira-item:last-child {
   padding-bottom: 0;
-}
-
-.carreira .carreira-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
-  background: #ffffff;
-  border: 2px solid #032b63;
 }
 
 /*--------------------------------------------------------------
@@ -496,7 +503,7 @@ section i {
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(228, 228, 228, 0.637);
   position: absolute;
   left: 0;
   right: 0;

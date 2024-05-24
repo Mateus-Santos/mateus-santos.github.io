@@ -9,6 +9,29 @@
     color: $cor-opcoes2;
 }
 
+.carreira .carreira-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  position: relative;
+}
+
+.projects-color {
+  border-left: 2px solid $cor-opcoes6;
+}
+
+//Circulo
+.projects-color::before {
+  border: 2px solid $cor-opcoes6;
+}
+
+.carrer-color {
+  border-left: 2px solid $cor-opcoes;
+}
+
+.carrer-color::before {
+  border: 2px solid $cor-opcoes;
+}
+
 .carreira .carreira-item::before {
     content: "";
     position: absolute;
@@ -18,24 +41,8 @@
     left: -9px;
     top: 0;
     background: $cor-fonte;
-    border: 2px solid $cor-opcoes;
 }
 
-.carreira .carreira-title {
-    font-size: 26px;
-    font-weight: 700;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    color: $cor-opcoes2;
-  }
-  
-  .carreira .carreira-item {
-    padding: 0 0 20px 20px;
-    margin-top: -2px;
-    border-left: 2px solid $cor-opcoes;
-    position: relative;
-  }
-  
   .carreira .carreira-item h4 {
     line-height: 18px;
     font-size: 18px;
@@ -62,8 +69,20 @@
   .pass h5{
     background: $cor-opcoes8;
   }
+
   .carreira .carreira-item ul {
     padding-left: 20px;
+    a {
+      transition: 300ms;
+      background-color: $cor-opcoes;
+    }a:hover{
+      transition: 300ms;
+      background-color: $cor-opcoes4;
+    }
+    i{
+      transition: 300ms;
+      color: $cor-opcoes3;
+    }
   }
   
   .carreira .carreira-item ul li {
@@ -72,16 +91,4 @@
   
   .carreira .carreira-item:last-child {
     padding-bottom: 0;
-  }
-  
-  .carreira .carreira-item::before {
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 50px;
-    left: -9px;
-    top: 0;
-    background: $cor-fonte;
-    border: 2px solid $cor-opcoes;
   }
