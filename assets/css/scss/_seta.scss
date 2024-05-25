@@ -8,6 +8,14 @@ $largura-seta-inferior: 4rem;
   position: absolute;
   margin: 2rem;
   margin-left: 9rem;
+  a{
+    color: initial;
+    text-decoration: none;
+    font-weight: none;
+    background-color: none;
+    padding: 0px 0px 0px 0px;
+    border-radius: 0rem;
+  }
 }
 
 .arrow{

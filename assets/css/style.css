@@ -64,18 +64,18 @@ body::-webkit-scrollbar-thumb {
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
-  color: #fff;
+  color: #ffffff;
 }
 
 #principal p {
-  color: #fff;
+  color: #ffffff;
   margin: 0 0 0 6px;
   font-size: 26px;
   font-family: "Poppins", sans-serif;
 }
 
 #principal p span {
-  color: #fff;
+  color: #ffffff;
   padding-bottom: 3px;
   letter-spacing: 1px;
   border-bottom: 3px solid #149ddd;
@@ -85,6 +85,22 @@ body::-webkit-scrollbar-thumb {
 section {
   padding: 3rem 0;
   overflow: hidden;
+}
+section a {
+  transition: 300ms;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: Bold;
+  background-color: #032b63;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10rem;
+}
+section a:hover {
+  transition: 300ms;
+  background-color: #149ddd;
+}
+section i {
+  color: #149ddd;
 }
 
 .section-title {
@@ -117,6 +133,44 @@ section {
 
 #main {
   margin-left: 19rem;
+}
+
+/*--------------------------------------------------------------
+# Sessão Contato
+--------------------------------------------------------------*/
+.contato {
+  padding-bottom: 2rem;
+}
+
+.contato .info {
+  background: #ffffff;
+  width: 100%;
+  box-shadow: 0 0 2px 0 #032b63;
+  border-radius: 2rem;
+  margin-top: 1rem;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.contato .info i {
+  font-size: 22px;
+  width: 10rem;
+  height: 10rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contato .info h4 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #050d18;
+}
+
+.contato .info p {
+  margin-bottom: 1rem;
+  font-size: 15px;
 }
 
 .cmenu.is-active {
@@ -165,8 +219,7 @@ section {
   bottom: 0;
   width: 300px;
   transition: all ease-in-out 0.5s;
-  z-index: 9999;
-  transition: all 0.5s;
+  z-index: 9995;
   padding: 0 15px;
   background: linear-gradient(250deg, #000825, #000000);
   overflow-y: auto;
@@ -224,7 +277,7 @@ section {
   padding: 6px 3px 6px 3px;
   width: 200px;
   height: 200px;
-  background-color: rgba(0, 25, 61, 0.5882352941);
+  background-color: #272829;
 }
 .icons_social :hover {
   color: #050d18;
@@ -259,7 +312,6 @@ section {
 
 .sobre .content ul i {
   margin-right: 2px;
-  color: #149ddd;
   line-height: 0;
 }
 
@@ -278,7 +330,7 @@ section {
   cursor: pointer;
   left: 15rem;
   position: fixed;
-  z-index: 9999;
+  z-index: 9995;
   transition-duration: 200ms;
   mix-blend-mode: difference;
 }
@@ -318,6 +370,28 @@ section {
   color: #050d18;
 }
 
+.carreira .carreira-item {
+  padding: 0 0 20px 20px;
+  margin-top: -2px;
+  position: relative;
+}
+
+.projects-color {
+  border-left: 2px solid #18ff84;
+}
+
+.projects-color::before {
+  border: 2px solid #18ff84;
+}
+
+.carrer-color {
+  border-left: 2px solid #032b63;
+}
+
+.carrer-color::before {
+  border: 2px solid #032b63;
+}
+
 .carreira .carreira-item::before {
   content: "";
   position: absolute;
@@ -327,22 +401,6 @@ section {
   left: -9px;
   top: 0;
   background: #ffffff;
-  border: 2px solid #032b63;
-}
-
-.carreira .carreira-title {
-  font-size: 26px;
-  font-weight: 700;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #050d18;
-}
-
-.carreira .carreira-item {
-  padding: 0 0 20px 20px;
-  margin-top: -2px;
-  border-left: 2px solid #032b63;
-  position: relative;
 }
 
 .carreira .carreira-item h4 {
@@ -369,11 +427,23 @@ section {
 }
 
 .pass h5 {
-  background: rgba(228, 231, 186, 0.658);
+  background: rgba(228, 228, 228, 0.637);
 }
 
 .carreira .carreira-item ul {
   padding-left: 20px;
+}
+.carreira .carreira-item ul a {
+  transition: 300ms;
+  background-color: #032b63;
+}
+.carreira .carreira-item ul a:hover {
+  transition: 300ms;
+  background-color: #149ddd;
+}
+.carreira .carreira-item ul i {
+  transition: 300ms;
+  color: #dff3fc;
 }
 
 .carreira .carreira-item ul li {
@@ -382,18 +452,6 @@ section {
 
 .carreira .carreira-item:last-child {
   padding-bottom: 0;
-}
-
-.carreira .carreira-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
-  background: #ffffff;
-  border: 2px solid #032b63;
 }
 
 /*--------------------------------------------------------------
@@ -444,7 +502,7 @@ section {
 
 .portfolio .portfolio-wrap::before {
   content: "";
-  background: rgba(255, 255, 255, 0.5);
+  background: rgba(228, 228, 228, 0.637);
   position: absolute;
   left: 0;
   right: 0;
@@ -471,13 +529,13 @@ section {
   color: #ffffff;
   font-size: 28px;
   text-align: center;
-  background: rgba(20, 157, 221, 0.95);
+  background: #149ddd;
   transition: 0.3s;
   width: 50%;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a:hover {
-  background: rgba(20, 157, 221, 0.95);
+  background: #149ddd;
 }
 
 .portfolio .portfolio-wrap .portfolio-links a + a {
@@ -568,6 +626,14 @@ section {
   margin: 2rem;
   margin-left: 9rem;
 }
+.arrow-container a {
+  color: initial;
+  text-decoration: none;
+  font-weight: none;
+  background-color: none;
+  padding: 0px 0px 0px 0px;
+  border-radius: 0rem;
+}
 
 .arrow {
   position: relative;
@@ -588,7 +654,7 @@ section {
     transform: translateY(0rem);
   } /* Cor inicial */
   100% {
-    border-top-color: #2cff8e;
+    border-top-color: #18ff84;
     transform: translateY(8rem);
   } /* Cor intermediária */
 }
@@ -600,6 +666,15 @@ section {
 .bi {
   font-size: 20px;
   margin: 0 5px 0 5px;
+}
+
+.bi-copy {
+  color: #149ddd;
+}
+
+.bi-check-circle-fill {
+  color: #18ff84;
+  transition: all 0.3s ease-in-out;
 }
 
 /* CSS media query dentro de um stylesheet */
@@ -664,4 +739,12 @@ section {
   .menu-btn {
     left: 0.5rem;
   }
+}
+.carousel-item img {
+  height: 25rem;
+  width: 25rem;
+}
+
+.carousel-indicators, .carousel-control-next-icon, .carousel-control-prev-icon {
+  background-color: rgba(17, 17, 27, 0.336);
 }/*# sourceMappingURL=style.css.map */

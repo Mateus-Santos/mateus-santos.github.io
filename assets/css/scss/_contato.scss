@@ -4,24 +4,22 @@
 # Sessão Contato
 --------------------------------------------------------------*/
 .contato {
-    padding-bottom: 130px;
+    padding-bottom: 2rem;
   }
-  
+
 .contato .info {
-    padding: 30px;
-    background: $cor-opcoes3;
+    background: $cor-fonte;
     width: 100%;
-    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 0 2px 0 $cor-opcoes;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
   }
   
   .contato .info i {
-    font-size: 20px;
-    color: $cor-opcoes4;
-    float: left;
-    width: 44px;
-    height: 44px;
-    background: $cor-opcoes3;
-    display: flex;
+    font-size: 22px;
+    width: 10rem;
+    height: 10rem;
     justify-content: center;
     align-items: center;
     border-radius: 50px;
@@ -29,157 +27,13 @@
   }
   
   .contato .info h4 {
-    padding: 0 0 0 60px;
-    font-size: 22px;
-    font-weight: 600;
-    margin-bottom: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 1rem;
     color: $cor-opcoes2;
   }
   
   .contato .info p {
-    padding: 0 0 10px 60px;
-    margin-bottom: 20px;
-    font-size: 14px;
-    color: $cor-opcoes;
-  }
-  
-  .contato .info .email p {
-    padding-top: 5px;
-  }
-  
-  .contato .info .social-links {
-    padding-left: 60px;
-  }
-  
-  .contato .info .social-links a {
-    font-size: 18px;
-    display: inline-block;
-    background: $cor-fundo;
-    color: $cor-fonte;
-    line-height: 1;
-    padding: 8px 0;
-    border-radius: 50%;
-    text-align: center;
-    width: 36px;
-    height: 36px;
-    transition: 0.3s;
-    margin-right: 10px;
-  }
-  
-  .contato .info .social-links a:hover {
-    background: $cor-opcoes4;
-    color: $cor-fundo;
-  }
-  
-  .contato .info .email:hover i,
-  .contato .info .endereco:hover i,
-  .contato .info .telefone:hover i {
-    background: $cor-opcoes4;
-    color: $cor-fundo;
-  }
-  
-  .contato .php-email-form {
-    width: 100%;
-    padding: 30px;
-    background: $cor-fundo;
-    box-shadow: 0 0 24px 0 $cor-fundo;
-  }
-  
-  .contato .php-email-form .form-group {
-    padding-bottom: 8px;
-  }
-  
-  .contato .php-email-form .validate {
-    display: none;
-    color: $cor-opcoes5;
-    margin: 0 0 15px 0;
-    font-weight: 400;
-    font-size: 13px;
-  }
-  
-  .contato .php-email-form .error-message {
-    display: none;
-    color: $cor-fundo;
-    background: $cor-opcoes5;
-    text-align: left;
-    padding: 15px;
-    font-weight: 600;
-  }
-  
-  .contato .php-email-form .error-message br+br {
-    margin-top: 25px;
-  }
-  
-  .contato .php-email-form .sent-message {
-    display: none;
-    color: $cor-fundo;
-    background: $cor-opcoes6;
-    text-align: center;
-    padding: 15px;
-    font-weight: 600;
-  }
-  
-  .contato .php-email-form .loading {
-    display: none;
-    background: $cor-fundo;
-    text-align: center;
-    padding: 15px;
-  }
-  
-  .contato .php-email-form .loading:before {
-    content: "";
-    display: inline-block;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    margin: 0 10px -6px 0;
-    border: 3px solid $cor-opcoes6;
-    border-top-color: $cor-fonte;
-    animation: animate-loading 1s linear infinite;
-  }
-  
-  .contato .php-email-form .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .contato .php-email-form label {
-    padding-bottom: 8px;
-  }
-  
-  .contato .php-email-form input,
-  .contato .php-email-form textarea {
-    border-radius: 0;
-    box-shadow: none;
-    font-size: 14px;
-  }
-  
-  .contato .php-email-form input {
-    height: 44px;
-  }
-  
-  .contato .php-email-form textarea {
-    padding: 10px 15px;
-  }
-  
-  .contato .php-email-form button[type=submit] {
-    background: $cor-opcoes4;
-    border: 0;
-    padding: 10px 24px;
-    color: $cor-fundo;
-    transition: 0.4s;
-    border-radius: 4px;
-  }
-  
-  .contato .php-email-form button[type=submit]:hover {
-    background: #37b3ed;
-  }
-  
-  @keyframes animate-loading {
-    0% {
-      transform: rotate(0deg);
-    }
-  
-    100% {
-      transform: rotate(360deg);
-    }
+    margin-bottom: 1rem;
+    font-size: 15px;
   }

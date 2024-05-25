@@ -1,0 +1,13 @@
+@import './_colors.scss';
+
+
+.carousel-item{
+    img{
+        height: 25rem;
+        width: 25rem;
+    }
+}
+
+.carousel-indicators, .carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: $filtro-foto;
+}

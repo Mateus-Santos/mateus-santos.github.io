@@ -7,6 +7,7 @@
 }
 
 
+
 //Alterando todas as fontes de titulos.
 h1,h2,h3,h4,h5,h6{
     font-family: $font-menu2, sans-serif;
@@ -67,18 +68,18 @@ body::-webkit-scrollbar-thumb{
     font-size: 64px;
     font-weight: 700;
     line-height: 56px;
-    color: $principal-color;
+    color: $cor-fonte;
 }
 
 #principal p{
-    color: $principal-color;
+    color: $cor-fonte;
     margin: 0 0 0 6px;
     font-size: 26px;
     font-family: $font-sessoes, sans-serif;
 }
 
 #principal p span{
-    color: $principal-color;
+    color: $cor-fonte;
     padding-bottom: 3px;
     letter-spacing: 1px;
     border-bottom: 3px solid $cor-opcoes4;

@@ -55,8 +55,7 @@ $tamanho: 35px;
     bottom: 0;
     width: 300px;
     transition: all ease-in-out 0.5s;
-    z-index: 9999;
-    transition: all 0.5s;
+    z-index: 9995;
     padding: 0 15px;
     background: $cor-menu;
     overflow-y: auto;
@@ -114,7 +113,7 @@ $tamanho: 35px;
         padding: 6px 3px 6px 3px;
         width: 200px;
         height: 200px;
-        background-color: $cor-opcoes11;
+        background-color: $cor-fundo;
     }:hover{
         color: $cor-opcoes2;
         background-color: $cor-houver-menu;

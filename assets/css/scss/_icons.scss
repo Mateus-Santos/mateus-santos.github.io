@@ -1,3 +1,5 @@
+@import './_colors.scss';
+
 .icons{
     margin-left: 8px;
     margin: 0 10px 0 10px;
@@ -6,4 +8,13 @@
 .bi{
     font-size: 20px;
     margin: 0 5px 0 5px;
+}
+
+.bi-copy{
+    color: $cor-opcoes4;
+}
+
+.bi-check-circle-fill{
+    color: $cor-opcoes6;
+    transition: all 0.3s ease-in-out;
 }
