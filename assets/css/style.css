@@ -219,8 +219,7 @@ section i {
   bottom: 0;
   width: 300px;
   transition: all ease-in-out 0.5s;
-  z-index: 9999;
-  transition: all 0.5s;
+  z-index: 9995;
   padding: 0 15px;
   background: linear-gradient(250deg, #000825, #000000);
   overflow-y: auto;
@@ -331,7 +330,7 @@ section i {
   cursor: pointer;
   left: 15rem;
   position: fixed;
-  z-index: 9999;
+  z-index: 9995;
   transition-duration: 200ms;
   mix-blend-mode: difference;
 }
