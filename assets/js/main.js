@@ -1,3 +1,14 @@
+document.addEventListener('DOMContentLoaded', function() {
+  const menuBtn = document.querySelector('.menu-btn');
+  const menu = document.querySelector('.cmenu');
+
+  menuBtn.addEventListener('click', function() {
+      menuBtn.classList.toggle('is-active');
+      menuBtn.classList.toggle('open');
+      menu.classList.toggle('is-active');
+  });
+});
+
 const profissoes = ["Professor de informática", "Desenvolvedor de Software"]; // Texto a ser digitado.
 const el = document.querySelector("#digitar"); //Escolhendo elemento no HTML para digitar.
 
