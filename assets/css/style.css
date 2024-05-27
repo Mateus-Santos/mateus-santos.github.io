@@ -81,6 +81,10 @@ body::-webkit-scrollbar-thumb {
   border-bottom: 3px solid #149ddd;
 }
 
+.efeito-topo, .efeito-baixo, .efeito-esq, .efeito-dir, .efeito-esq-img {
+  visibility: hidden;
+}
+
 /*------ # Sessões Gerais ----- */
 section {
   padding: 3rem 0;
@@ -283,10 +287,6 @@ section i {
 .icons_social :hover {
   color: #050d18;
   background-color: #00fcfc;
-}
-
-.efeito-topo {
-  visibility: hidden;
 }
 
 .sobre .content h3 {
