@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-const profissoes = ["Professor de informática", "Desenvolvedor de Software"]; // Texto a ser digitado.
+const profissoes = ["Professor de informática", "Desenvolvedor de Web", "Desenvolvedor de Software"]; // Texto a ser digitado.
 const el = document.querySelector("#digitar"); //Escolhendo elemento no HTML para digitar.
 
 function digitarTexto(texto, indiceCaractere, indicePalavra) { //Função recursiva percorrer caracter a caracter.
@@ -38,3 +38,11 @@ function digitarTexto(texto, indiceCaractere, indicePalavra) { //Função recurs
 }
 
 digitarTexto(profissoes[0], 0, 0); // Iniciar a digitação com a primeira palavra
+
+function Mudarestado(el) {
+  var visibility = document.getElementById(el).style.visibility;
+  if(visibility == "visible")
+      document.getElementById(el).style.visibility = 'hidden';
+  else
+      document.getElementById(el).style.visibility = 'visible';
+}
