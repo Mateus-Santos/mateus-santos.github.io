@@ -39,10 +39,11 @@ function digitarTexto(texto, indiceCaractere, indicePalavra) { //Função recurs
 
 digitarTexto(profissoes[0], 0, 0); // Iniciar a digitação com a primeira palavra
 
-function Mudarestado(el) {
-  var visibility = document.getElementById(el).style.visibility;
-  if(visibility == "visible")
-      document.getElementById(el).style.visibility = 'hidden';
-  else
-      document.getElementById(el).style.visibility = 'visible';
-}
+document.addEventListener('DOMContentLoaded', function() {
+  const certificado_button = document.querySelector('.ocultar-exibir');
+  const certificado_img_occult = document.querySelector('.certificado-img-occult');
+
+  certificado_button.addEventListener('click', function() {
+    certificado_img_occult.classList.toggle('certificado-img-exibir');
+  });
+});

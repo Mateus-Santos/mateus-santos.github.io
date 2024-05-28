@@ -15,8 +15,14 @@
       }
 
 
-.certificado-img{
+.certificado-img-occult{
     visibility: hidden;
+    height: 0;
+}
+.certificado-img-exibir{
+    visibility: visible;
+    margin-top: 1rem;
+    display:contents;
 }
 
 .carousel-item{
