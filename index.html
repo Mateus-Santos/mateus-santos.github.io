@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link href="assets/css/loading.css" rel="stylesheet">
+    <script src="assets/js/loading.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="192x192" href="./android-chrome-192x192.png">
@@ -12,11 +14,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
     <link rel="manifest" href="./site.webmanifest">
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/fonts.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet" defer>
+    <link href="assets/css/fonts.css" rel="stylesheet" defer>
     <title>Mateus Santos</title>
   </head>
-  <script src="assets/js/loading.js"></script>
+  
   <body onload="loading()">
     
     <div class="container-loading">
@@ -37,7 +39,6 @@
               <a href="https://www.linkedin.com/in/mateus-santos-095a53210/"><i class="bi bi-linkedin"></i></a>
               <a href="https://wa.me/5575997148570"><i class="bi bi-whatsapp"></i></a>
               <a href="https://github.com/Mateus-Santos"><i class="bi bi-github"></i></a>
-              <a href=""><i class="bi bi-instagram"></i></a>
         </div>
 
         <!-- Opções menu Tags-->
@@ -113,7 +114,7 @@
       <main id="main">
 
           <!-- ======= Sessão Sobre ======= -->
-          <section id="sobre" class="sobre">
+          <section id="sobre" class="sobre efeito-topo">
 
              <div class="container">
                 <div class="section-title">
@@ -127,11 +128,11 @@
                 </div>
 
                 <div class="row">
-                  <div class="col-lg-4" data-aos="fade-right">
-                    <img src="assets/imgs/foto3.jpg" class="img-fluid" alt="">
+                  <div class="col-lg-4">
+                    <img src="assets/imgs/foto3.jpg" class="img-fluid efeito-esq-img">
                   </div>
                 
-                  <div class="col-lg-8 pt-4 pt-lg-0 content aos-init aos-animate" data-aos="fade-right">
+                  <div class="col-lg-8 pt-4 pt-lg-0 content efeito-topo-2">
                     <h3>Desenvolvedor Web</h3>
                     <p class="fst-italic">
                       Como desenvolvedor, priorizo resolver o principal problema do usuário e 
@@ -166,7 +167,7 @@
              </div>
           </section>
 
-          <section id="carreira" class="carreira">
+          <section id="carreira" class="carreira efeito-topo">
             <div class="container">
               <div class="section-title">
                 <h2>Carreira</h2>
@@ -183,7 +184,7 @@
 
               <div class="row">
 
-                <div class="col-lg-6">
+                <div class="col-lg-6 efeito-topo-2">
                   <h3 class="carreira-title">Monitor e Professor</h3>
 
                   <div class="carreira-item carrer-color atual">
@@ -219,7 +220,7 @@
                   </div>
                 </div>
                 
-                <div class="col-lg-5">
+                <div class="col-lg-5 efeito-topo-3">
                   <h3 class="carreira-title">Projetos desenvolvidos</h3>
                   <div class="carreira-item projects-color pass">
                     <h4>Oficina SOS Mecânica</h4>
@@ -248,7 +249,7 @@
           </section>
 
           <!-- ======= Sessão Portfolio  ======= -->
-          <section id="portfolio" class="portfolio section-bg">
+          <section id="portfolio" class="portfolio section-bg efeito-topo">
             <div class="container">
 
               <div class="section-title">
@@ -279,15 +280,12 @@
           </section><!-- Final sessão Portfolio -->
 
           <!-- Inicio sessão Certificados -->
-
-          <!--
-          <section class="certificados">
+          <section class="certificados" id="certificados">
             <div class="container">
               <div class="section-title">
                 <h2>Certificados</h2>
-                <p> Nessa sessão você pode acompanhar minhas certificações.
-                </p>
-                <div class="row">
+                <a class="ocultar-exibir" type="button">Mostrar / Esconder</a>
+                <div class="row certificado-img-occult">
                   <div id="carouselExampleIndicators" class="carousel slide">
                       <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -296,13 +294,13 @@
                       </div>
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="/assets/imgs/certificados/1.jpg" class="d-block w-100" alt="...">
+                          <img src="./assets/imgs/certificados/1.jpg" class="d-block w-100">
                         </div>
                         <div class="carousel-item">
-                          <img src="/assets/imgs/certificados/2.jpg" class="d-block w-100" alt="...">
+                          <img src="./assets/imgs/certificados/2.jpg" class="d-block w-100">
                         </div>
                         <div class="carousel-item">
-                          <img src="/assets/imgs/certificados/3.jpg" class="d-block w-100" alt="...">
+                          <img src="./assets/imgs/certificados/3.jpg" class="d-block w-100">
                         </div>
                       </div>
                       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -317,9 +315,8 @@
                     </div>
                   </div>
                 </div>
-          </section>
+          </section><!-- Final sessão certificados -->
 
-          Final sessão certificados-->
           <!-- ======= Sessão Contato ======= -->
           <section id="contato" class="contato">
             <div class="container">
@@ -332,7 +329,7 @@
                   para fins profissionais.</p>
               </div>
 
-              <div class="row" data-aos="fade-in">
+              <div class="row">
 
                 <div class="col-lg-5 d-flex align-items-stretch">
                   <div class="info">
@@ -365,8 +362,8 @@
             </div>
           </section><!-- End contato Section -->
       </main>
+    <script src="assets/js/reveal.js" async></script>
     <script src="assets/js/main.js"></script>
-    <script src="assets/js/menu.js"></script>
     <script src="assets/js/copiarConteudo.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>  

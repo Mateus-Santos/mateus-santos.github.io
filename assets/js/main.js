@@ -1,4 +1,15 @@
-const profissoes = ["Professor de informática", "Desenvolvedor de Software"]; // Texto a ser digitado.
+document.addEventListener('DOMContentLoaded', function() {
+  const menuBtn = document.querySelector('.menu-btn');
+  const menu = document.querySelector('.cmenu');
+
+  menuBtn.addEventListener('click', function() {
+      menuBtn.classList.toggle('is-active');
+      menuBtn.classList.toggle('open');
+      menu.classList.toggle('is-active');
+  });
+});
+
+const profissoes = ["Professor de informática", "Desenvolvedor de Web", "Desenvolvedor de Software"]; // Texto a ser digitado.
 const el = document.querySelector("#digitar"); //Escolhendo elemento no HTML para digitar.
 
 function digitarTexto(texto, indiceCaractere, indicePalavra) { //Função recursiva percorrer caracter a caracter.
@@ -27,3 +38,12 @@ function digitarTexto(texto, indiceCaractere, indicePalavra) { //Função recurs
 }
 
 digitarTexto(profissoes[0], 0, 0); // Iniciar a digitação com a primeira palavra
+
+document.addEventListener('DOMContentLoaded', function() {
+  const certificado_button = document.querySelector('.ocultar-exibir');
+  const certificado_img_occult = document.querySelector('.certificado-img-occult');
+
+  certificado_button.addEventListener('click', function() {
+    certificado_img_occult.classList.toggle('certificado-img-exibir');
+  });
+});

@@ -1,11 +1,37 @@
 @import './_colors.scss';
 
+.ocultar-exibir{
+    margin-top: 1rem;
+    transition: 300ms;
+    color: $cor-fonte;
+    text-decoration: none;
+    font-weight: Bold;
+    background-color: $cor-opcoes;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10rem;
+}.ocultar-exibir:hover{
+        transition: 300ms;
+        background-color: $cor-opcoes4;
+      }
+
+
+.certificado-img-occult{
+    visibility: hidden;
+    height: 0;
+}
+.certificado-img-exibir{
+    visibility: visible;
+    margin-top: 1rem;
+    display:contents;
+}
 
 .carousel-item{
+    margin-top: 1rem;
     img{
-        height: 25rem;
+        height: 40rem;
         width: 25rem;
     }
+    
 }
 
 .carousel-indicators, .carousel-control-next-icon, .carousel-control-prev-icon{
