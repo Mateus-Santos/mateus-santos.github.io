@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
+    <!-- Carregamento antecipado do loading. -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <link href="assets/css/loading.css" rel="stylesheet">
     <script src="assets/js/loading.js"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Carregamento dos ícones -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/imgs/icons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="192x192" href="/assets/imgs/icons/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="512x512" href="/assets/imgs/icons/android-chrome-512x512.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/imgs/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/imgs/icons/favicon-16x16.png">
     <link rel="manifest" href="/assets/imgs/icons/site.webmanifest">
+    <!-- Styles pages -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="assets/css/style.css" rel="stylesheet" defer>
     <link href="assets/css/fonts.css" rel="stylesheet" defer>
+    
     <title>Mateus Santos</title>
   </head>
   
@@ -302,6 +308,41 @@
 
           </section><!-- Final sessão Portfolio -->
 
+          <!-- Sessão Testemunhas -->
+          <section id="testimonials" class="testimonials section-bg">
+            <div class="container">
+
+              <div class="section-title">
+                <h2>Testemunhas</h2>
+                <p>Essa sessão você poderá verificar feedbacks de colegas de trabalho ou clientes que já prestei serviços.
+                </p>
+              </div>
+
+              <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide">
+                    <div class="testimonial-item" data-aos="fade-up">
+                      <p>
+                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                        Mateus é um profissional comprometido com o que lhe é confiado. Ele é dinâmico, pró-ativo, dedicado, bom líder, bom professor, um ótimo colega de trabalho, está sempre disposto a agregar valores ao seu ambiente de trabalho. Sempre criando conteúdos novos, acredito muito em seu potencial.
+                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                      </p>
+                      <img src="assets/imgs/testimonials/testimonials-1.png" class="testimonial-img" alt="">
+                      <h3>Jéssica Fernanda</h3>
+                      <h4>Analista Financeiro</h4>
+                    </div>
+                  </div>
+
+
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+
+            </div>
+          </section>
+          <!-- Fim Sessão testemunha -->
+
           <!-- Inicio sessão Certificados -->
           <section class="certificados" id="certificados">
             <div class="container">
@@ -422,9 +463,22 @@
             </div>
           </section><!-- End contato Section -->
       </main>
-    <script src="assets/js/reveal.js" async></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/copiarConteudo.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+      <!-- Vendor JS Files -->
+      <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+      <script src="assets/vendor/aos/aos.js"></script>
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+      <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+      <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+      <script src="assets/vendor/typed.js/typed.umd.js"></script> 
+      <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>     
+      
+      <!-- SCRIPTS ANTERIORES -->
+      <script src="assets/js/reveal.js"></script>
+      <script src="assets/js/main.js"></script>
+      <script src="assets/js/copiarConteudo.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <script src="assets/js/testemunial.js"></script>
   </body>  
 </html>
