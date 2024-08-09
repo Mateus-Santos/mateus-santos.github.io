@@ -193,8 +193,8 @@ section i {
 }
 
 .testimonials .testimonial-item .testimonial-img {
-  width: 6rem;
-  height: 6rem;
+  width: 8rem;
+  height: 7rem;
   border-radius: 50%;
   margin: 0 auto;
 }
@@ -203,12 +203,12 @@ section i {
   font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 0;
-  color: #111;
+  color: #050d18;
 }
 
 .testimonials .testimonial-item h4 {
   font-size: 14px;
-  color: #999;
+  color: #7e8083;
   margin: 0;
 }
 
@@ -235,18 +235,18 @@ section i {
   font-style: italic;
   margin: 0 15px 15px 15px;
   padding: 20px;
-  background: #fff;
+  background: #ffffff;
   position: relative;
   margin-bottom: 35px;
   border-radius: 6px;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 15px rgba(17, 17, 27, 0.336);
 }
 
 .testimonials .testimonial-item p::after {
   content: "";
   width: 0;
   height: 0;
-  border-top: 20px solid #fff;
+  border-top: 20px solid #ffffff;
   border-right: 20px solid transparent;
   border-left: 20px solid transparent;
   position: absolute;
@@ -262,7 +262,7 @@ section i {
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: #fff;
+  background-color: #ffffff;
   opacity: 1;
   border: 1px solid #149ddd;
 }
