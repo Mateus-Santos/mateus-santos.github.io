@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-const profissoes = ["Professor de informática", "Desenvolvedor de Web", "Desenvolvedor de Software"]; // Texto a ser digitado.
+const profissoes = ["Desenvolvedor de Web", "Desenvolvedor de Software", "Analista de Dados", "Data Engineer", "Professor de informática"]; // Texto a ser digitado.
 const el = document.querySelector("#digitar"); //Escolhendo elemento no HTML para digitar.
 
 function digitarTexto(texto, indiceCaractere, indicePalavra) { //Função recursiva percorrer caracter a caracter.
