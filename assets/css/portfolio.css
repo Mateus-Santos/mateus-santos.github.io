@@ -18,3 +18,40 @@
 @media(max-width:900px){.references-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.certificate-grid{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(max-width:800px){.site-nav{gap:16px}.site-nav a{font-size:.9rem}.references-grid{grid-template-columns:1fr}.reference-card{min-height:0}.certificate-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:550px){.brand-name{font-size:.94rem}.certificate-grid{grid-template-columns:repeat(2,minmax(0,1fr));padding:0 15px 15px;gap:9px}.certificate-item img{height:140px}.certificates-details summary{padding:18px 15px}.reference-card{padding:21px}.contact-secondary{max-width:100%}}
+
+/* v2.2 — monograma M centralizado, sem interferência do ponto decorativo */
+.brand { gap: 12px; }
+.brand::before { content: none; }
+.brand-mark {
+  position: relative;
+  width: 43px;
+  height: 43px;
+  flex: 0 0 43px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--accent);
+  color: var(--accent-ink);
+  border-radius: 12px;
+  padding: 0;
+  line-height: 1;
+  font-size: 1.1rem;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+.brand-mark .brand-initial {
+  color: var(--accent-ink);
+  line-height: 1;
+  display: block;
+  transform: translateY(1px); /* compensação óptica da fonte */
+}
+.brand-mark .brand-dot {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  width: 4px;
+  height: 4px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: var(--accent-2);
+}
