@@ -120,3 +120,20 @@
 }
 /* Melhor legibilidade dos pequenos rótulos e das descrições em tema escuro. */
 [data-theme="dark"] { --subtle: #a5bbc9; }
+
+/* v2.6 — evidência visual real, com preservação de dados internos. */
+.project-visual.visual-sos{padding:0;background:#0a1926;isolation:isolate}
+.sos-card-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:.81}
+.visual-sos::before{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(5,18,28,.76),transparent 60%),linear-gradient(90deg,rgba(5,18,28,.60),transparent 70%);z-index:1}
+.visual-sos .sos-overline,.visual-sos .sos-caption{position:absolute;z-index:2;left:24px;color:#fff}
+.visual-sos .sos-overline{top:20px;text-shadow:0 2px 9px rgba(0,0,0,.55)}
+.visual-sos .sos-caption{bottom:14px;padding:5px 9px;border-radius:5px;background:rgba(5,18,28,.74);font-size:.69rem}
+.case-screenshot-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:20px 0 32px}
+.case-screenshot{margin:0;border:1px solid var(--border);border-radius:13px;overflow:hidden;background:var(--panel)}
+.case-screenshot-wide{grid-column:span 2}
+.case-screenshot a{display:block;overflow:hidden;background:#172635}
+.case-screenshot img{width:100%;height:auto;aspect-ratio:1365/599;object-fit:contain;display:block;transition:transform .24s ease}
+.case-screenshot a:hover img{transform:scale(1.015)}
+.case-screenshot figcaption{padding:11px 15px;font-size:.8rem;color:var(--muted);font-weight:650}
+@media(max-width:620px){.case-screenshot-grid{grid-template-columns:1fr}.case-screenshot-wide{grid-column:span 1}}
+@media(prefers-reduced-motion:reduce){.case-screenshot img{transition:none}.case-screenshot a:hover img{transform:none}}

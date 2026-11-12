@@ -6,7 +6,7 @@ Site de apresentação de projetos e experiências em **Dados, BI, ETL, automaç
 
 ## Conteúdo
 
-- Projetos: pipeline ETL corporativo, ERP SOS Mecânica / Jaime Automotivo, gestão pedagógica, plataforma de hospedagens (antigo ViagemOKBrasil, nome em revisão) e Forge automotivo.
+- Projetos: pipeline ETL corporativo, ERP SOS Mecânica / Jaime Automotivo, gestão pedagógica, HotelVagas (antigo ViagemOKBrasil, demonstração em preparação) e Forge automotivo.
 - Estudos de caso de ETL, SOS Mecânica, gestão pedagógica e plataforma de hospedagens, com limites explícitos de confidencialidade e demonstração.
 - Trajetória profissional, formação, competências, referências e certificados da versão anterior.
 - Contato via WhatsApp, e-mail e LinkedIn.
@@ -58,3 +58,13 @@ Não publicar bases corporativas, dados pessoais de clientes, credenciais ou có
 - Ajustes em telas menores e tratamento de preferência por movimento reduzido.
 - Sem alteração de fatos profissionais, datas, métricas ou direitos de publicação.
 - A auditoria automática verifica estrutura local, mas não certifica conformidade integral às WCAG ou Core Web Vitals.
+
+## Atualização v2.6 — fatos e imagens
+
+- Experiência Progresso Distribuidora / Bivolt: **05/05/2025–13/07/2026**, nomes da mesma relação profissional. **Cargo oficial ainda não confirmado**: a linha do tempo usa área de atuação em vez de cargo formal.
+- Experiência Instituto Mix: **05/07/2024–15/04/2025**. **Cargo oficial e percentual de melhoria ainda não confirmados**.
+- Graduação UNEX: conclusão acadêmica em **2025**; colação e documentação em **2026**.
+- ETL: cenário anterior exigia extração via API durante as atualizações do Power BI e tratamento manual de planilhas Excel pesadas. Resultado relativo à preparação de **um conjunto de relatórios**. Não publicar tempo ou percentual de melhoria até confirmação da natureza dos números.
+- Nome definido: **HotelVagas**. Publicação de demonstração e código depende de segurança e direitos de uso.
+- Capturas reais do SOS incluídas somente depois de mascarar valores, nomes, placas, códigos e registros. Os originais **não** integram o repositório nem o pacote distribuído.
+- Depoimentos antigos autorizados, segundo o autor. **Quarto depoimento pendente de envio**. Certificados continuam precisando de identificação individual.
