@@ -7,7 +7,7 @@ Site de apresentação de projetos e experiências em **Dados, BI, ETL, automaç
 ## Conteúdo
 
 - Projetos: pipeline ETL corporativo, ERP SOS Mecânica / Jaime Automotivo, gestão pedagógica, plataforma de hospedagens (antigo ViagemOKBrasil, nome em revisão) e Forge automotivo.
-- Estudos de caso de ETL, SOS Mecânica e plataforma de hospedagens, com limites explícitos de confidencialidade e demonstração.
+- Estudos de caso de ETL, SOS Mecânica, gestão pedagógica e plataforma de hospedagens, com limites explícitos de confidencialidade e demonstração.
 - Trajetória profissional, formação, competências, referências e certificados da versão anterior.
 - Contato via WhatsApp, e-mail e LinkedIn.
 
@@ -50,3 +50,11 @@ Não publicar bases corporativas, dados pessoais de clientes, credenciais ou có
 - Segurança, dados fictícios e direitos de publicação devem ser verificados antes de publicar acesso ao sistema ou código da aplicação.
 - A página `cases/plataforma-hospedagens.html` distingue funcionalidades descritas em currículo antigo de implementação auditada. Quando houver código revisado, atualizar as evidências.
 - Mantidos WhatsApp, referências, certificados e monograma centralizado da v2.2.
+
+## Atualização V2.5 — experiência e acessibilidade
+
+- Navegação responsiva consistente nas páginas dos estudos de caso.
+- Controle de alternância entre os temas escuro/claro em todas as páginas; preferência local no navegador.
+- Ajustes em telas menores e tratamento de preferência por movimento reduzido.
+- Sem alteração de fatos profissionais, datas, métricas ou direitos de publicação.
+- A auditoria automática verifica estrutura local, mas não certifica conformidade integral às WCAG ou Core Web Vitals.
