@@ -6,8 +6,8 @@ Site de apresentação de projetos e experiências em **Dados, BI, ETL, automaç
 
 ## Conteúdo
 
-- Projetos: pipeline ETL corporativo, ERP SOS Mecânica / Jaime Automotivo, gestão pedagógica, ViagemOKBrasil e Forge automotivo.
-- Estudos de caso de ETL e SOS Mecânica, com limites explícitos de acesso a dados e código corporativo.
+- Projetos: pipeline ETL corporativo, ERP SOS Mecânica / Jaime Automotivo, gestão pedagógica, HotelVagas (antigo ViagemOKBrasil, demonstração em preparação) e Forge automotivo.
+- Estudos de caso de ETL, SOS Mecânica, gestão pedagógica e plataforma de hospedagens, com limites explícitos de confidencialidade e demonstração.
 - Trajetória profissional, formação, competências, referências e certificados da versão anterior.
 - Contato via WhatsApp, e-mail e LinkedIn.
 
@@ -29,11 +29,11 @@ python3 tools/verificar_portfolio.py
 
 ## Publicação
 
-O GitHub Pages publica o conteúdo da branch/pasta configurada. Faça o merge da branch de atualização apenas após conferir os links e se os arquivos de certificados existentes carregam corretamente. O pacote v2.1 **não apaga** arquivos antigos nem inclui os certificados; estes permanecem na árvore do repositório original.
+O GitHub Pages publica o conteúdo da branch/pasta configurada. Faça o merge da branch de atualização apenas após conferir os links e se os arquivos de certificados existentes carregam corretamente. O pacote v2.3 **não apaga** arquivos antigos nem inclui os certificados; estes permanecem na árvore do repositório original.
 
 ## Confidencialidade
 
-Não publicar bases corporativas, dados pessoais de clientes, credenciais ou código de terceiros. Resultados numéricos refletem informações declaradas no currículo, não auditoria externa. 
+Não publicar bases corporativas, dados pessoais de clientes, credenciais ou código de terceiros. Resultados numéricos refletem informações declaradas no currículo, não auditoria externa.
 
 ## Manutenção
 
@@ -41,3 +41,30 @@ Não publicar bases corporativas, dados pessoais de clientes, credenciais ou có
 - Substituir ilustrações por capturas reais autorizadas sempre que possível.
 - Adicionar demos somente com dados sintéticos e revisão de segurança.
 - Rever referências e certificados com seus autores e documentos originais.
+
+## Atualização v2.3 — projeto de hospedagens
+
+- O projeto antes conhecido como **ViagemOKBrasil** aparece publicamente como **Plataforma de hospedagens** até escolha do novo nome.
+- Natureza: **software desenvolvido sob encomenda**, conforme declaração do autor. Não apresentar como produto implantado pelo cliente.
+- A publicação não menciona problemas comerciais nem afirma que existe uma demonstração disponível.
+- Segurança, dados fictícios e direitos de publicação devem ser verificados antes de publicar acesso ao sistema ou código da aplicação.
+- A página `cases/plataforma-hospedagens.html` distingue funcionalidades descritas em currículo antigo de implementação auditada. Quando houver código revisado, atualizar as evidências.
+- Mantidos WhatsApp, referências, certificados e monograma centralizado da v2.2.
+
+## Atualização V2.5 — experiência e acessibilidade
+
+- Navegação responsiva consistente nas páginas dos estudos de caso.
+- Controle de alternância entre os temas escuro/claro em todas as páginas; preferência local no navegador.
+- Ajustes em telas menores e tratamento de preferência por movimento reduzido.
+- Sem alteração de fatos profissionais, datas, métricas ou direitos de publicação.
+- A auditoria automática verifica estrutura local, mas não certifica conformidade integral às WCAG ou Core Web Vitals.
+
+## Atualização v2.6 — fatos e imagens
+
+- Experiência Progresso Distribuidora / Bivolt: **05/05/2025–13/07/2026**, nomes da mesma relação profissional. **Cargo oficial ainda não confirmado**: a linha do tempo usa área de atuação em vez de cargo formal.
+- Experiência Instituto Mix: **05/07/2024–15/04/2025**. **Cargo oficial e percentual de melhoria ainda não confirmados**.
+- Graduação UNEX: conclusão acadêmica em **2025**; colação e documentação em **2026**.
+- ETL: cenário anterior exigia extração via API durante as atualizações do Power BI e tratamento manual de planilhas Excel pesadas. Resultado relativo à preparação de **um conjunto de relatórios**. Não publicar tempo ou percentual de melhoria até confirmação da natureza dos números.
+- Nome definido: **HotelVagas**. Publicação de demonstração e código depende de segurança e direitos de uso.
+- Capturas reais do SOS incluídas somente depois de mascarar valores, nomes, placas, códigos e registros. Os originais **não** integram o repositório nem o pacote distribuído.
+- Depoimentos antigos autorizados, segundo o autor. **Quarto depoimento pendente de envio**. Certificados continuam precisando de identificação individual.
