@@ -6,8 +6,8 @@ Site de apresentação de projetos e experiências em **Dados, BI, ETL, automaç
 
 ## Conteúdo
 
-- Projetos: pipeline ETL corporativo, ERP SOS Mecânica / Jaime Automotivo, gestão pedagógica, ViagemOKBrasil e Forge automotivo.
-- Estudos de caso de ETL e SOS Mecânica, com limites explícitos de acesso a dados e código corporativo.
+- Projetos: pipeline ETL corporativo, ERP SOS Mecânica / Jaime Automotivo, gestão pedagógica, plataforma de hospedagens (antigo ViagemOKBrasil, nome em revisão) e Forge automotivo.
+- Estudos de caso de ETL, SOS Mecânica e plataforma de hospedagens, com limites explícitos de confidencialidade e demonstração.
 - Trajetória profissional, formação, competências, referências e certificados da versão anterior.
 - Contato via WhatsApp, e-mail e LinkedIn.
 
@@ -29,11 +29,11 @@ python3 tools/verificar_portfolio.py
 
 ## Publicação
 
-O GitHub Pages publica o conteúdo da branch/pasta configurada. Faça o merge da branch de atualização apenas após conferir os links e se os arquivos de certificados existentes carregam corretamente. O pacote v2.1 **não apaga** arquivos antigos nem inclui os certificados; estes permanecem na árvore do repositório original.
+O GitHub Pages publica o conteúdo da branch/pasta configurada. Faça o merge da branch de atualização apenas após conferir os links e se os arquivos de certificados existentes carregam corretamente. O pacote v2.3 **não apaga** arquivos antigos nem inclui os certificados; estes permanecem na árvore do repositório original.
 
 ## Confidencialidade
 
-Não publicar bases corporativas, dados pessoais de clientes, credenciais ou código de terceiros. Resultados numéricos refletem informações declaradas no currículo, não auditoria externa. 
+Não publicar bases corporativas, dados pessoais de clientes, credenciais ou código de terceiros. Resultados numéricos refletem informações declaradas no currículo, não auditoria externa.
 
 ## Manutenção
 
@@ -41,3 +41,12 @@ Não publicar bases corporativas, dados pessoais de clientes, credenciais ou có
 - Substituir ilustrações por capturas reais autorizadas sempre que possível.
 - Adicionar demos somente com dados sintéticos e revisão de segurança.
 - Rever referências e certificados com seus autores e documentos originais.
+
+## Atualização v2.3 — projeto de hospedagens
+
+- O projeto antes conhecido como **ViagemOKBrasil** aparece publicamente como **Plataforma de hospedagens** até escolha do novo nome.
+- Natureza: **software desenvolvido sob encomenda**, conforme declaração do autor. Não apresentar como produto implantado pelo cliente.
+- A publicação não menciona problemas comerciais nem afirma que existe uma demonstração disponível.
+- Segurança, dados fictícios e direitos de publicação devem ser verificados antes de publicar acesso ao sistema ou código da aplicação.
+- A página `cases/plataforma-hospedagens.html` distingue funcionalidades descritas em currículo antigo de implementação auditada. Quando houver código revisado, atualizar as evidências.
+- Mantidos WhatsApp, referências, certificados e monograma centralizado da v2.2.

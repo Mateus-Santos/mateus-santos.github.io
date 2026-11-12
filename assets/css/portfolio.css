@@ -55,3 +55,15 @@
   border-radius: 50%;
   background: var(--accent-2);
 }
+
+/* v2.3 — estado verificável da aplicação de hospedagens em revisão */
+.project-in-review .project-status{
+  display:flex;align-items:flex-start;gap:9px;
+  color:var(--muted);font-size:.76rem;line-height:1.45;
+  margin:-1px 0 14px;
+}
+.project-status-dot{
+  flex:0 0 7px;width:7px;height:7px;margin-top:6px;
+  border-radius:50%;background:var(--accent-2);
+}
+.project-in-review .text-link{margin-top:auto}
