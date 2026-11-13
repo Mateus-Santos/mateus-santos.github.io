@@ -53,6 +53,51 @@
     saveTheme(next);
   }));
 
+  // Prévias automáticas sem setas/pontos: só imagens reais sanitizadas.
+  // A rotação para ao passar o mouse, focar no cartão, sair da tela ou trocar de aba.
+  // Usuários com preferência por movimento reduzido veem somente a imagem inicial.
+  const reduceMotion = window.matchMedia?.('(prefers-reduced-motion: reduce)');
+  document.querySelectorAll('[data-project-carousel]').forEach(carousel => {
+    const slides = Array.from(carousel.querySelectorAll('.project-preview-slide'));
+    if (slides.length < 2) return;
+    const card = carousel.closest('.project-card');
+    const caption = card?.querySelector('[data-preview-caption]');
+    const delay = Math.max(4000, Number.parseInt(carousel.dataset.delay, 10) || 5300);
+    let index = 0;
+    let interval = null;
+    let onScreen = true;
+    let pausedByHover = false;
+    let pausedByFocus = false;
+    const allowed = () => !document.hidden && onScreen && !pausedByHover &&
+      !pausedByFocus && !reduceMotion?.matches && !card?.hidden;
+    const pause = () => { if (interval !== null) { window.clearInterval(interval); interval = null; } };
+    const advance = () => {
+      slides[index].classList.remove('is-current');
+      index = (index + 1) % slides.length;
+      slides[index].classList.add('is-current');
+      if (caption) caption.textContent = `${slides[index].dataset.previewLabel || 'Prévia'} · imagens censuradas`;
+    };
+    const refresh = () => {
+      pause();
+      if (allowed()) interval = window.setInterval(advance, delay);
+    };
+    card?.addEventListener('mouseenter', () => { pausedByHover = true; refresh(); });
+    card?.addEventListener('mouseleave', () => { pausedByHover = false; refresh(); });
+    card?.addEventListener('focusin', () => { pausedByFocus = true; refresh(); });
+    card?.addEventListener('focusout', () => { pausedByFocus = false; refresh(); });
+    document.addEventListener('visibilitychange', refresh);
+    if (reduceMotion?.addEventListener) reduceMotion.addEventListener('change', refresh);
+    else if (reduceMotion?.addListener) reduceMotion.addListener(refresh);
+    if ('IntersectionObserver' in window) {
+      const observer = new IntersectionObserver(entries => {
+        onScreen = entries.some(entry => entry.isIntersecting);
+        refresh();
+      }, { threshold: 0.15 });
+      observer.observe(card);
+    }
+    refresh();
+  });
+
   const year = document.getElementById('year');
   if (year) year.textContent = String(new Date().getFullYear());
 })();
