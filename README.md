@@ -61,10 +61,16 @@ Não publicar bases corporativas, dados pessoais de clientes, credenciais ou có
 
 ## Atualização v2.6 — fatos e imagens
 
-- Experiência Progresso Distribuidora / Bivolt: **05/05/2025–13/07/2026**, nomes da mesma relação profissional. **Cargo oficial ainda não confirmado**: a linha do tempo usa área de atuação em vez de cargo formal.
-- Experiência Instituto Mix: **05/07/2024–15/04/2025**. **Cargo oficial e percentual de melhoria ainda não confirmados**.
+- Experiência Progresso Distribuidora / Bivolt: **05/05/2025–13/07/2026**, nomes da mesma relação profissional. Cargo informado: **Analista de Dados Comercial**; também havia apoio à conferência de pedidos para faturamento.
+- Experiência Instituto Mix: **05/07/2024–15/04/2025**. Vínculo CLT iniciado como **Monitor de Informática**, com atuação como **Assessor Pedagógico** nos dois meses finais. Percentual de melhoria ainda não confirmado.
 - Graduação UNEX: conclusão acadêmica em **2025**; colação e documentação em **2026**.
 - ETL: cenário anterior exigia extração via API durante as atualizações do Power BI e tratamento manual de planilhas Excel pesadas. Resultado relativo à preparação de **um conjunto de relatórios**. Não publicar tempo ou percentual de melhoria até confirmação da natureza dos números.
 - Nome definido: **HotelVagas**. Publicação de demonstração e código depende de segurança e direitos de uso.
 - Capturas reais do SOS incluídas somente depois de mascarar valores, nomes, placas, códigos e registros. Os originais **não** integram o repositório nem o pacote distribuído.
-- Depoimentos antigos autorizados, segundo o autor. **Quarto depoimento pendente de envio**. Certificados continuam precisando de identificação individual.
+- Depoimentos antigos autorizados, segundo o autor. **Quarto depoimento recebido de Naiane de Jesus Souza**, Orientadora Comercial do Instituto Mix de Profissões; texto mantido literalmente conforme o formulário. Certificados continuam precisando de identificação individual.
+
+## Atualização de fatos e referências (13/11/2026)
+- A experiência comercial do período de 05/05/2025 a 13/07/2026 teve o título informado de **Analista de Dados Comercial**.
+- No Instituto Mix (05/07/2024 a 15/04/2025), a atividade CLT incluiu Monitor de Informática e, nos últimos dois meses, Assessor Pedagógico.
+- O quarto depoimento profissional foi acrescentado sem publicação do PDF original. O formulário exportado contém um endereço privado de resposta e não deve ser colocado neste repositório.
+- O cartão Forge descreve apenas a integração Laravel documentada em arquivos públicos. O extrator Forge de origem ainda depende de inspeção separada.
