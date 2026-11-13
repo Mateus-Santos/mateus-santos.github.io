@@ -144,3 +144,22 @@
 .case-bullets li{margin:0 0 10px}
 .case-gallery-note{margin:-2px 0 16px;color:var(--muted)}
 .case-screenshot-grid img{background:#f3f5f7}
+
+
+/* V2.8 — carrossel passivo de screenshots sanitizados e CTA no topo dos cartões */
+.project-preview{position:relative;overflow:hidden;isolation:isolate;padding:0;background:#102131}
+.project-preview-track{position:absolute;inset:0;overflow:hidden;z-index:0}
+.project-preview-slide{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:cover;object-position:center;opacity:0;visibility:hidden;transition:opacity .65s ease,visibility .65s ease}
+.project-preview-slide.is-current{opacity:1;visibility:visible}
+.project-preview::before{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;background:linear-gradient(180deg,rgba(5,16,29,.69),transparent 54%,rgba(5,16,29,.81))}
+.project-preview::after{content:none}
+.project-preview .preview-overline{position:absolute;top:17px;left:22px;z-index:2;color:#f2fcff;letter-spacing:.13em;text-shadow:0 1px 3px rgba(0,0,0,.8)}
+.project-preview .preview-caption{position:absolute;left:19px;bottom:13px;z-index:2;max-width:calc(100% - 38px);color:#f2fcff;border:1px solid rgba(226,244,255,.22);background:rgba(7,21,34,.86);padding:5px 9px;border-radius:6px;font-size:.69rem;font-weight:700;line-height:1.45}
+.project-card{position:relative}
+.project-card .project-meta{align-items:flex-start;gap:9px}
+.project-card .project-type{max-width:100%;line-height:1.5}
+.project-top-link{position:absolute;top:17px;right:19px;z-index:5;display:inline-flex;align-items:center;justify-content:center;gap:5px;border:1px solid var(--accent);border-radius:8px;padding:8px 11px;min-height:35px;background:#092c32;color:#92ffd7;box-shadow:0 2px 10px rgba(0,0,0,.22);font-size:.77rem;font-weight:800;line-height:1.25;white-space:nowrap;transition:background .16s,border-color .16s}
+.project-top-link:hover{background:#11534c;text-decoration:underline;text-underline-offset:3px}
+.project-top-link:focus-visible{outline:3px solid var(--accent-2);outline-offset:3px}
+@media(max-width:400px){.project-top-link{top:12px;right:12px;padding:7px 9px;font-size:.72rem}.project-preview .preview-overline{top:60px}}
+@media(prefers-reduced-motion:reduce){.project-preview-slide{transition:none}}
