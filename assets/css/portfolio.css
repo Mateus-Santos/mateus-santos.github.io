@@ -137,3 +137,10 @@
 .case-screenshot figcaption{padding:11px 15px;font-size:.8rem;color:var(--muted);font-weight:650}
 @media(max-width:620px){.case-screenshot-grid{grid-template-columns:1fr}.case-screenshot-wide{grid-column:span 1}}
 @media(prefers-reduced-motion:reduce){.case-screenshot img{transition:none}.case-screenshot a:hover img{transform:none}}
+
+
+/* v2.7 — exemplos sanitizados de BI comercial */
+.case-bullets{padding-left:1.1rem;color:var(--muted)}
+.case-bullets li{margin:0 0 10px}
+.case-gallery-note{margin:-2px 0 16px;color:var(--muted)}
+.case-screenshot-grid img{background:#f3f5f7}
