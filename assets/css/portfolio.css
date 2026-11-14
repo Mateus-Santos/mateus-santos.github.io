@@ -163,3 +163,23 @@
 .project-top-link:focus-visible{outline:3px solid var(--accent-2);outline-offset:3px}
 @media(max-width:400px){.project-top-link{top:12px;right:12px;padding:7px 9px;font-size:.72rem}.project-preview .preview-overline{top:60px}}
 @media(prefers-reduced-motion:reduce){.project-preview-slide{transition:none}}
+
+/* V2.10 — Forge: cartão compacto com prévia real e CTA em destaque */
+.project-card.forge-feature-card{padding:0;display:flex;flex-direction:column;min-height:0}
+.forge-feature-card .project-visual{width:100%;height:193px;flex:0 0 auto;border-bottom:1px solid var(--border)}
+.forge-feature-card .forge-card-body{padding:23px 25px 24px;display:flex;flex-direction:column;flex:1;min-width:0}
+.forge-feature-card .forge-card-body .project-meta{margin-bottom:14px}
+.forge-feature-card .forge-card-body h3{font-size:1.38rem}
+.forge-feature-card .forge-card-body p{margin-bottom:20px;flex:1}
+.forge-feature-card .stack{margin-bottom:0}
+.forge-feature-card .project-top-link{top:15px;right:16px}
+.forge-feature-card .visual-forge{background:#0d1822}
+.forge-feature-card .project-preview-slide{object-fit:cover;object-position:left center}
+.case-screenshot-grid.forge-screenshots .case-screenshot img{aspect-ratio:auto;height:auto;object-fit:contain}
+.case-screenshot-grid.forge-screenshots .case-screenshot a{background:#0b1119}
+.case-screenshot-grid.forge-screenshots .case-screenshot figcaption{line-height:1.55}
+@media (max-width:550px){
+  .forge-feature-card .project-visual{height:180px}
+  .forge-feature-card .forge-card-body{padding:22px 19px}
+  .forge-feature-card .project-top-link{top:12px;right:12px}
+}
