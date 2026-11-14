@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#08131f">
+  <meta name="description" content="Estudo de caso do Forge DB Oficina: automação de coleta de catálogos, Python, Selenium, SQLite, filas, API de monitoramento, integridade e integração Laravel.">
+  <link rel="canonical" href="https://mateus-santos.github.io/cases/forge-db.html">
+  <link rel="icon" type="image/svg+xml" href="../assets/imgs/icons/portfolio-icon.svg">
+  <link rel="stylesheet" href="../assets/css/portfolio.css">
+  <title>Forge DB Oficina — Automação e Engenharia de Dados | Mateus Santos</title>
+  <script src="../assets/js/portfolio.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="site-header"><div class="container header-inner">
+    <a class="brand" href="../index.html"><span class="brand-mark" aria-hidden="true"><span class="brand-initial">M</span><span class="brand-dot"></span></span><span class="brand-name">Mateus Santos</span></a>
+    <button class="menu-toggle" type="button" aria-label="Abrir menu de navegação" aria-controls="site-nav" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="site-nav" id="site-nav" aria-label="Navegação">
+      <a href="../index.html#projetos">Projetos</a><a href="../index.html#experiencia">Experiência</a>
+      <button type="button" class="theme-toggle" data-theme-toggle aria-label="Ativar tema claro" aria-pressed="false"><span class="theme-symbol" aria-hidden="true">☼</span><span data-theme-label>Tema claro</span></button>
+      <a class="nav-contact" href="../index.html#contato">Contato ↗</a>
+    </nav>
+  </div></header>
+  <main id="conteudo" class="case-page"><div class="container">
+    <a class="back-link" href="../index.html#projetos">← Voltar aos projetos</a>
+    <div class="case-hero">
+      <div class="case-topline">Estudo de caso · projeto independente · documentação em novembro de 2026</div>
+      <h1>Forge DB Oficina — coleta e engenharia de dados</h1>
+      <p>Aplicação Python para organizar informações de catálogos automotivos, com coleta controlada, normalização e persistência, filas, observabilidade e preparação de pacotes para integração com um ERP Laravel. O painel permite acompanhar o andamento e os recursos consumidos pelo processo.</p>
+      <div class="case-meta"><span>Python</span><span>Selenium</span><span>SQLite</span><span>API REST</span><span>Filas</span><span>Telemetria</span><span>Integração Laravel</span></div>
+    </div>
+    <div class="case-banner"><strong>Escopo e maturidade</strong>
+      <p>Há evidências de funcionalidades implementadas e utilizadas na coleta e no monitoramento. A revisão de confiabilidade e segurança ainda está em andamento; suporte multifonte, migrações documentais e determinadas homologações não são apresentados como operações concluídas em produção.</p>
+    </div>
+    <div class="case-layout">
+      <article class="case-article">
+        <h2>Problema que o projeto resolve</h2>
+        <p>Catálogos automotivos reúnem produtos, fabricantes, veículos, aplicações, imagens e similares em estruturas relacionadas. Consultar e consolidar essas informações manualmente dificulta a organização de um catálogo utilizável por aplicações internas. O Forge foi estruturado para apoiar a coleta controlada, a organização e a atualização dessas informações.</p>
+        <h2>Arquitetura de alto nível</h2>
+        <div class="case-flow" role="img" aria-label="Fontes de catálogo; automação e coletores; persistência SQLite; API e painel; pacotes de integração Laravel"><span>Fontes de catálogo</span><b>→</b><span>Coletores Python</span><b>→</b><span>SQLite</span><b>→</b><span>API / Painel</span><b>→</b><span>Pacote Laravel</span></div>
+        <p>O código está organizado em coletores, pipeline de execução, repositórios de persistência, API administrativa, exportadores e interface de monitoramento. As etapas são separadas para que a consulta à origem não dependa da apresentação visual do painel.</p>
+        <h2>Funcionalidades evidenciadas</h2>
+        <ul class="case-bullets">
+          <li><strong>Coleta e organização:</strong> processos para produtos, aplicações, veículos, imagens e relacionamentos, com normalização dos dados antes de sua utilização.</li>
+          <li><strong>Filas e retomada:</strong> estados de tarefa, prioridades e recuperação de trabalho interrompido em caminhos examinados.</li>
+          <li><strong>Observabilidade:</strong> indicadores de cobertura, erros, andamento, amostras de memória e estado do coletor exibidos no painel.</li>
+          <li><strong>Controles operacionais:</strong> cadência, pausas e mecanismos de suspensão sob restrições da origem em módulos específicos, ainda sob revisão de cobertura.</li>
+          <li><strong>Exportação para Laravel:</strong> geração de pacotes com snapshot SQLite, staging, manifesto, verificações de integridade e publicação controlada no fluxo analisado.</li>
+          <li><strong>API administrativa:</strong> rotas protegidas por sessão, perfis e controles de requisição em trechos do código examinados.</li>
+        </ul>
+        <h2>Interfaces do projeto</h2>
+        <p class="case-gallery-note">Capturas reais do painel de desenvolvimento. O nome da plataforma de origem foi coberto por tarjas opacas. Os quantitativos visíveis são instantâneos da base de trabalho; não demonstram velocidade, qualidade dos dados ou direitos de reutilização de catálogos. As imagens não oferecem acesso ao sistema.</p>
+        <div class="case-screenshot-grid forge-screenshots">
+            <figure class="case-screenshot case-screenshot-wide">
+              <a href="../assets/imgs/portfolio/forge/visao-geral.webp" target="_blank" rel="noopener noreferrer" aria-label="Abrir imagem ampliada: Visão geral">
+                <img src="../assets/imgs/portfolio/forge/visao-geral.webp" loading="lazy" decoding="async" alt="Captura do Forge: Visão geral; identificação da fonte coberta por tarjas escuras." width="1350" height="596">
+              </a>
+              <figcaption><strong>Visão geral:</strong> Indicadores de produtos, aplicações, imagens, veículos e acompanhamento do processo de coleta. Os totais representam o estado exibido na captura, não um indicador de desempenho comercial.</figcaption>
+            </figure>
+<figure class="case-screenshot">
+              <a href="../assets/imgs/portfolio/forge/recursos.webp" target="_blank" rel="noopener noreferrer" aria-label="Abrir imagem ampliada: Performance e recursos">
+                <img src="../assets/imgs/portfolio/forge/recursos.webp" loading="lazy" decoding="async" alt="Captura do Forge: Performance e recursos; identificação da fonte coberta por tarjas escuras." width="1348" height="604">
+              </a>
+              <figcaption><strong>Performance e recursos:</strong> Histórico de consumo de memória com amostras do worker, métricas de ambiente e informações de configuração do navegador.</figcaption>
+            </figure>
+<figure class="case-screenshot">
+              <a href="../assets/imgs/portfolio/forge/prioridades.webp" target="_blank" rel="noopener noreferrer" aria-label="Abrir imagem ampliada: Montadoras prioritárias">
+                <img src="../assets/imgs/portfolio/forge/prioridades.webp" loading="lazy" decoding="async" alt="Captura do Forge: Montadoras prioritárias; identificação da fonte coberta por tarjas escuras." width="1090" height="609">
+              </a>
+              <figcaption><strong>Montadoras prioritárias:</strong> Visão das prioridades de processamento, pesos, itens compatíveis, descobertas e pendências por categoria de veículo.</figcaption>
+            </figure>
+<figure class="case-screenshot">
+              <a href="../assets/imgs/portfolio/forge/catalogo.webp" target="_blank" rel="noopener noreferrer" aria-label="Abrir imagem ampliada: Distribuição dos dados">
+                <img src="../assets/imgs/portfolio/forge/catalogo.webp" loading="lazy" decoding="async" alt="Captura do Forge: Distribuição dos dados; identificação da fonte coberta por tarjas escuras." width="1350" height="602">
+              </a>
+              <figcaption><strong>Distribuição dos dados:</strong> Concentração por marca, departamento e tipo de produto, útil para inspeção de cobertura e perfil do catálogo.</figcaption>
+            </figure>
+<figure class="case-screenshot">
+              <a href="../assets/imgs/portfolio/forge/execucoes.webp" target="_blank" rel="noopener noreferrer" aria-label="Abrir imagem ampliada: Execuções e produtos">
+                <img src="../assets/imgs/portfolio/forge/execucoes.webp" loading="lazy" decoding="async" alt="Captura do Forge: Execuções e produtos; identificação da fonte coberta por tarjas escuras." width="1344" height="598">
+              </a>
+              <figcaption><strong>Execuções e produtos:</strong> Acompanhamento de tarefas concluídas ou com erro, combinado com consulta aos produtos cadastrados.</figcaption>
+            </figure>
+        </div>
+        <h2>Decisões de engenharia</h2>
+        <p>O desenho prioriza tarefas recuperáveis, registro de estados e separação entre coleta, armazenamento e integração. No fluxo de exportação examinado, um snapshot consistente permite gerar os arquivos sem depender de consultas diretas ao fornecedor, e o pacote é validado antes da publicação no destino.</p>
+        <p>Há também mecanismos para acompanhar consumo de memória e limites do ambiente, permitindo observar o impacto de processos de navegador e coletores em execução.</p>
+        <h2>O que ainda está em validação</h2>
+        <ul class="case-bullets">
+          <li>confirmar interrupção segura em todos os caminhos de coleta diante de restrições da origem, inclusive durante os lotes;</li>
+          <li>revisar o tratamento de erros, a sanitização de logs e a consistência dos estados após falhas;</li>
+          <li>comprovar, com testes offline, comportamento em cenários de concorrência e exportações volumosas;</li>
+          <li>homologar a compatibilidade do módulo multifonte com o esquema persistente, antes de habilitar novas origens.</li>
+        </ul>
+        <div class="case-note"><strong>Transparência:</strong> este estudo de caso reflete evidências parciais de código e capturas fornecidas pelo autor. Não representa auditoria completa de segurança, certificação de conformidade, garantia contra bloqueios, nem validação contratual para publicação dos dados de terceiros. Recursos multifonte permanecem descritos como evolução em homologação.</div>
+        <div class="case-end"><a class="button button-secondary" href="../index.html#projetos">Ver outros projetos <span aria-hidden="true">↗</span></a></div>
+      </article>
+      <aside class="case-sidebar"><h3>Ficha técnica</h3><ul>
+        <li><strong>Natureza:</strong> projeto técnico independente</li>
+        <li><strong>Principal linguagem:</strong> Python</li>
+        <li><strong>Automação:</strong> Selenium e coletores</li>
+        <li><strong>Persistência:</strong> SQLite</li>
+        <li><strong>Interface:</strong> API e painel web</li>
+        <li><strong>Integração:</strong> pacotes para ERP Laravel</li>
+        <li><strong>Estado:</strong> melhorias de confiabilidade e suporte multifonte em homologação</li>
+        <li><strong>Evidências:</strong> capturas sanitizadas, documentação técnica e trechos públicos da integração com Laravel</li>
+      </ul><a class="text-link" href="https://github.com/Mateus-Santos/tela-oficina/blob/master/app/Services/Forge/ValidarPacoteForge.php" target="_blank" rel="noopener noreferrer">Examinar validador público da integração ↗</a><br><a class="text-link" href="../index.html#contato">Conversar sobre o Forge ↗</a></aside>
+    </div>
+  </div></main>
+  <footer class="site-footer"><div class="container footer-inner"><span>© 2026 Mateus Santos</span><span><a href="../index.html">Voltar ao portfólio ↗</a></span></div></footer>
+</body></html>
