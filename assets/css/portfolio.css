@@ -185,14 +185,11 @@
 }
 
 
-/* V2.11 — HotelVagas: resumo técnico sem simular captura de tela */
+/* V2.11/V2.12 — HotelVagas: prévia real com imagens do ambiente demonstrativo */
 .project-card.hotelvagas-feature-card{padding:0;display:flex;flex-direction:column;min-height:0}
-.hotelvagas-preview{min-height:160px;padding:22px 24px 18px;border-bottom:1px solid var(--border);background:radial-gradient(circle at 92% 0%,rgba(56,199,166,.20),transparent 46%),linear-gradient(130deg,#0d2f3e,#12223e);color:#eefaff;display:flex;flex-direction:column;align-items:flex-start;gap:4px}
-.hotelvagas-preview-kicker{font-size:.65rem;letter-spacing:.13em;color:#9fdfd1;font-weight:800}
-.hotelvagas-preview strong{font-size:1.55rem;letter-spacing:-.03em;margin-top:8px;line-height:1.15}
-.hotelvagas-preview-desc{font-size:.79rem;color:#c8e2e9}
-.hotelvagas-preview-tech{font-size:.7rem;color:#a7d4e5;letter-spacing:.01em;margin-top:auto}
-.hotelvagas-preview-tech span{color:#80e8ba;margin:0 3px}
+.hotelvagas-feature-card .project-visual{width:100%;height:193px;flex:0 0 auto;border-bottom:1px solid var(--border)}
+.visual-hotel{background:radial-gradient(circle at 92% 0%,rgba(56,199,166,.14),transparent 46%),linear-gradient(130deg,#0d2f3e,#12223e)}
+.visual-hotel .project-preview-slide{object-fit:cover;object-position:center top}
 .hotelvagas-card-body{padding:25px;display:flex;flex-direction:column;gap:0;flex:1}
 .hotelvagas-feature-card .project-meta{margin-bottom:13px;padding-right:86px}
 .hotelvagas-feature-card h3{margin-top:1px}
@@ -202,4 +199,15 @@
 .hotelvagas-demo-link:hover,.hotelvagas-demo-link:focus-visible{border-color:var(--accent);text-decoration:underline;text-underline-offset:3px}
 .hotelvagas-case-actions{display:flex;flex-wrap:wrap;gap:12px;margin:22px 0 8px}
 .hotelvagas-case-note{color:var(--muted);font-size:.83rem}
-@media(max-width:540px){.hotelvagas-feature-card .project-meta{padding-right:76px}.hotelvagas-preview{min-height:145px}}
+@media(max-width:540px){.hotelvagas-feature-card .project-meta{padding-right:76px}.hotelvagas-feature-card .project-visual{height:180px}}
+
+/* V2.12 — controles de galeria e navegação do HotelVagas */
+.project-preview-controls{position:absolute;right:13px;bottom:12px;z-index:4;display:flex;gap:6px;align-items:center}
+.project-preview-control{width:32px;height:32px;min-width:32px;padding:0;border-radius:8px;border:1px solid rgba(229,247,251,.42);background:rgba(6,24,35,.88);color:#f5feff;font-size:1.5rem;line-height:1;display:inline-flex;justify-content:center;align-items:center;cursor:pointer;transition:background .18s,border-color .18s}
+.project-preview-control.preview-toggle{font-size:.86rem}
+.project-preview-control:hover{background:#13605e;border-color:#8affd6}
+.project-preview-control:focus-visible{outline:3px solid #8affd6;outline-offset:2px}
+.project-preview .preview-caption{right:129px;max-width:calc(100% - 158px);font-size:.66rem;line-height:1.35}
+.hotelvagas-links{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}
+.hotelvagas-links .hotelvagas-demo-link{margin-top:0}
+@media(max-width:550px){.project-preview-controls{right:8px;bottom:7px;gap:4px}.project-preview-control{width:28px;height:28px;min-width:28px}.project-preview .preview-caption{right:107px;max-width:calc(100% - 122px);left:10px;font-size:.59rem;padding:3px 6px}}

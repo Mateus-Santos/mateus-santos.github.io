@@ -26,21 +26,27 @@
       <h1>HotelVagas — catálogo e gestão de leads para hospedagem</h1>
       <p>Aplicação web full-stack modernizada a partir de uma base legada, com catálogo de hotéis, área de clientes e gestão administrativa de oportunidades comerciais. O projeto inclui uma demonstração independente publicada em VPS com HTTPS.</p>
       <div class="case-meta"><span>PHP 8.4</span><span>Laravel 12</span><span>Vue 3</span><span>SQLite</span><span>Docker</span><span>GitHub Actions</span><span>Nginx</span></div>
-      <div class="hotelvagas-case-actions"><a class="button button-primary" href="https://hotelvagas-mateus.duckdns.org/" target="_blank" rel="noopener noreferrer">Acessar demonstração pública <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="../index.html#contato">Falar sobre o projeto</a></div>
+      <div class="hotelvagas-case-actions"><a class="button button-primary" href="https://hotelvagas-mateus.duckdns.org/" target="_blank" rel="noopener noreferrer">Acessar demonstração pública <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="https://hotelvagas-mateus.duckdns.org/leads" target="_blank" rel="noopener noreferrer">Painel de leads (acesso autenticado) <span aria-hidden="true">↗</span></a><a class="button button-secondary" href="../index.html#contato">Falar sobre o projeto</a></div>
       <p class="hotelvagas-case-note">A demonstração foi reportada como publicada em 18/11/2026; disponibilidade e fluxos podem variar. O repositório de aplicação é privado.</p>
     </div>
     <div class="case-banner"><strong>Estado verificado e limites</strong>
       <p>O relatório técnico registra implantação HTTPS e retorno HTTP 200 em <code>/up</code> em 18/11/2026. Isso comprova resposta do serviço naquele teste, não a validação de cadastro, login administrativo, envio de e-mails ou resiliência. O último patch de permissões/onboarding administrativo ainda aguardava aplicação, execução do workflow e teste funcional no momento do relatório.</p>
     </div>
+    <p class="case-gallery-note">As capturas abaixo pertencem ao ambiente demonstrativo do HotelVagas. Elas mostram telas com persistência real em banco de dados da aplicação, usando registros fictícios para navegação, teste e apresentação pública.</p>
+    <div class="case-screenshot-grid" aria-label="Capturas do HotelVagas">
+      <figure class="case-screenshot"><a href="../assets/imgs/portfolio/hotelvagas/catalogo-hoteis.webp" target="_blank" rel="noopener noreferrer"><img src="../assets/imgs/portfolio/hotelvagas/catalogo-hoteis.webp" alt="Catálogo público do HotelVagas com hotéis cadastrados, preço inicial e ações de edição/exclusão"></a><figcaption>Catálogo de hotéis publicados, com registros persistidos no ambiente demonstrativo.</figcaption></figure>
+      <figure class="case-screenshot"><a href="../assets/imgs/portfolio/hotelvagas/painel-leads.webp" target="_blank" rel="noopener noreferrer"><img src="../assets/imgs/portfolio/hotelvagas/painel-leads.webp" alt="Painel administrativo do HotelVagas com filtros, tabela de leads e atualização de status"></a><figcaption>Painel administrativo de solicitações, com busca, filtros, atualização de status e exportação.</figcaption></figure>
+      <figure class="case-screenshot case-screenshot-wide"><a href="../assets/imgs/portfolio/hotelvagas/filtros-e-status.webp" target="_blank" rel="noopener noreferrer"><img src="../assets/imgs/portfolio/hotelvagas/filtros-e-status.webp" alt="Recorte do HotelVagas destacando filtros, mensagem de atualização e tabela de leads"></a><figcaption>Detalhe do fluxo operacional: filtros, retorno visual de atualização e controle do andamento do lead.</figcaption></figure>
+    </div>
     <div class="case-layout">
       <article class="case-article">
         <h2>Contexto e minha atuação</h2>
-        <p>O HotelVagas nasceu de uma aplicação desenvolvida sob demanda comercial. Na evolução documentada, trabalhei na recuperação e modernização do legado, separando a experiência pública de consulta de hotéis dos fluxos autenticados de clientes e da administração. A demonstração atual é um ambiente técnico independente; não é apresentada como implantação no cliente ou operação comercial com reservas concluídas.</p>
+        <p>O HotelVagas nasceu de uma aplicação desenvolvida sob demanda comercial. Na evolução documentada, trabalhei na recuperação e modernização do legado, separando a experiência pública de consulta de hotéis dos fluxos autenticados de clientes e da administração. A demonstração atual é um ambiente técnico independente; não é apresentada como implantação no cliente ou operação comercial com reservas concluídas.</p><p>As telas mostradas neste portfólio foram capturadas do ambiente demonstrativo e refletem dados realmente gravados no banco da aplicação. Para preservar o uso público do ambiente, os registros exibidos são fictícios e servem apenas para comprovar fluxo, persistência e interface.</p>
         <h2>Funcionalidades implementadas no código</h2>
         <ul class="case-bullets">
           <li><strong>Catálogo:</strong> consulta de hotéis publicados com filtros por termo, cidade, UF e preço máximo, além de ordenação e detalhes de acomodações e imagens.</li>
           <li><strong>Administração:</strong> cadastro, edição, publicação e organização de fotos de hotéis, com validações no backend.</li>
-          <li><strong>Leads:</strong> registro de interesse e painel com paginação, filtros, atualização de status, exportação e trilha de auditoria das alterações.</li>
+          <li><strong>Leads:</strong> registro de interesse e painel com paginação, filtros, atualização de status, exportação e trilha de auditoria das alterações, com persistência no banco de dados da demonstração.</li>
           <li><strong>Clientes e parcerias:</strong> cadastro, autenticação, perfil e acompanhamento de solicitações; fluxo de solicitação de parceria e consulta administrativa.</li>
           <li><strong>Autorização:</strong> sessões Laravel/Sanctum, proteção CSRF, perfis e verificação de permissões no servidor, sem confiar apenas na interface Vue.</li>
         </ul>
