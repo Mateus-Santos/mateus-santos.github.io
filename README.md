@@ -6,7 +6,7 @@ Site de apresentação de projetos e experiências em **Dados, BI, ETL, automaç
 
 ## Conteúdo
 
-- Projetos: pipeline ETL corporativo, ERP SOS Mecânica / Jaime Automotivo, gestão pedagógica, HotelVagas (antigo ViagemOKBrasil, demonstração em preparação) e Forge automotivo.
+- Projetos: pipeline ETL corporativo, ERP SOS Mecânica / Jaime Automotivo, gestão pedagógica, HotelVagas (modernização full-stack, demonstração independente publicada em VPS) e Forge automotivo.
 - Estudos de caso de ETL, SOS Mecânica, gestão pedagógica e plataforma de hospedagens, com limites explícitos de confidencialidade e demonstração.
 - Trajetória profissional, formação, competências, referências e certificados da versão anterior.
 - Contato via WhatsApp, e-mail e LinkedIn.
@@ -42,13 +42,13 @@ Não publicar bases corporativas, dados pessoais de clientes, credenciais ou có
 - Adicionar demos somente com dados sintéticos e revisão de segurança.
 - Rever referências e certificados com seus autores e documentos originais.
 
-## Atualização v2.3 — projeto de hospedagens
+## HotelVagas — estudo de caso atualizado na v2.11
 
-- O projeto antes conhecido como **ViagemOKBrasil** aparece publicamente como **Plataforma de hospedagens** até escolha do novo nome.
-- Natureza: **software desenvolvido sob encomenda**, conforme declaração do autor. Não apresentar como produto implantado pelo cliente.
-- A publicação não menciona problemas comerciais nem afirma que existe uma demonstração disponível.
-- Segurança, dados fictícios e direitos de publicação devem ser verificados antes de publicar acesso ao sistema ou código da aplicação.
-- A página `cases/plataforma-hospedagens.html` distingue funcionalidades descritas em currículo antigo de implementação auditada. Quando houver código revisado, atualizar as evidências.
+- Nome atual: **HotelVagas** (base legada anteriormente denominada ViagemOKBrasil). Natureza: **software sob encomenda e demonstração técnica independente**; não afirmar implantação na operação do cliente.
+- A aplicação teve código revisado, modernização Laravel 12/Vue 3 e implantação documentada em VPS, Docker, SQLite e HTTPS; o relatório técnico de 18/11/2026 registra HTTP 200 em `/up`.
+- A URL pública da demonstração está no cartão e no estudo de caso. Disponibilidade externa, fluxos administrativos e direitos de uso de imagens e materiais devem ser reavaliados antes de ampliar a divulgação.
+- Permanecem pendentes: confirmação de deploy do patch de permissões/bootstrap administrativo, validação ponta a ponta, SMTP, testes de restauração e revisão de privacidade. Não publicar dados reais nem prometer reservas/pagamentos.
+- O repositório de código da aplicação permanece privado; não há resultados quantitativos de público, vendas ou desempenho anunciados.
 - Mantidos WhatsApp, referências, certificados e monograma centralizado da v2.2.
 
 ## Atualização V2.5 — experiência e acessibilidade
@@ -65,7 +65,7 @@ Não publicar bases corporativas, dados pessoais de clientes, credenciais ou có
 - Experiência Instituto Mix: **05/07/2024–15/04/2025**. Vínculo CLT iniciado como **Monitor de Informática**, com atuação como **Assessor Pedagógico** nos dois meses finais. Percentual de melhoria ainda não confirmado.
 - Graduação UNEX: conclusão acadêmica em **2025**; colação e documentação em **2026**.
 - ETL: cenário anterior exigia extração via API durante as atualizações do Power BI e tratamento manual de planilhas Excel pesadas. Resultado relativo à preparação de **um conjunto de relatórios**. Não publicar tempo ou percentual de melhoria até confirmação da natureza dos números.
-- Nome definido: **HotelVagas**. Publicação de demonstração e código depende de segurança e direitos de uso.
+- **HotelVagas:** demonstração técnica publicada em VPS em novembro de 2026, segundo relatório; código privado, homologação de fluxos e direitos de materiais ainda sob revisão.
 - Capturas reais do SOS incluídas somente depois de mascarar valores, nomes, placas, códigos e registros. Os originais **não** integram o repositório nem o pacote distribuído.
 - Depoimentos antigos autorizados, segundo o autor. **Quarto depoimento recebido de Naiane de Jesus Souza**, Orientadora Comercial do Instituto Mix de Profissões; texto mantido literalmente conforme o formulário. Certificados continuam precisando de identificação individual.
 
